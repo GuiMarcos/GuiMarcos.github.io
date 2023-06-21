@@ -105,6 +105,12 @@ a {
 
 .mainContainer {
 	min-height: 100vh;
+	.green {
+		color: $main-color;
+	}
+	.secondGreen {
+		color: $secondary-color;
+	}
 }
 
 .container0 {
@@ -162,4 +168,62 @@ a {
 
 .container1 {
 	background-color: $bg-dark;
+	.sectionTitle {
+		.aboutTop {
+			font-size: 40px;
+			font-family: "Rubik", sans-serif;
+			font-weight: 700;
+			span {
+				color: $main-color;
+			}
+		}
+		.aboutDetail {
+			height: 3px;
+			background-size: 100% 100%;
+			background-position: 0px 0px;
+			background-image: linear-gradient(
+				90deg,
+				#ffffff8a 0%,
+				#ffffffff 50%,
+				#ffffff91 100%
+			);
+		}
+	}
+
+	.contentAbout {
+		.textBox {
+			.myName {
+				font-size: 35px;
+				font-weight: 700;
+			}
+			.myJob {
+				font-size: 20px;
+				font-family: "Teko";
+				text-transform: uppercase;
+			}
+			.textAbout {
+				font-size: 18px;
+				text-align: justify;
+			}
+			.topics {
+				font-size: 15px;
+				font-weight: 600;
+				a {
+					color: $bg-light;
+					&:hover {
+						color: $secondary-color;
+					}
+				}
+			}
+			.cvDownloadBtn {
+				border-color: $main-color;
+				color: $main-color;
+				border-radius: 15px;
+				&:hover {
+					background-color: $secondary-color;
+					color: $bg-light;
+				}
+			}
+		}
+	}
 }

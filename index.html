@@ -20,111 +20,171 @@
 		<link rel="stylesheet" href="./css/style.css" />
 	</head>
 	<body>
-		<header class="header">
-			<div class="collapsedNav" id="navbarCollapsed">
-				<button onclick="showNav()" class="btn btn-primary-outline closeBtn">
-					X
-				</button>
-				<ul class="nav-links">
-					<li class="nav-item">
-						<a onclick="showNav()" href="#home" data-text="HOME" id="home-link"
-							>HOME</a
-						>
-					</li>
-					<li class="nav-item">
-						<a
-							onclick="showNav()"
-							href="#about"
-							data-text="ABOUT"
-							id="about-link"
-							>ABOUT</a
-						>
-					</li>
-					<li class="nav-item">
-						<a
-							onclick="showNav()"
-							href="#portfolio"
-							data-text="PORTFOLIO"
-							id="portfolio-link"
-							>PORTFOLIO</a
-						>
-					</li>
-					<li class="nav-item">
-						<a href="#contact" data-text="CONTACT" id="contact-link">CONTACT</a>
-					</li>
-				</ul>
-			</div>
-			<nav id="navMain" class="navbar fixed-top px-5">
-				<a class="navbar-brand" href="#home"
-					><img class="imgBrand" src="img/Assinatura2.png" alt="logo"
-				/></a>
-				<button
-					class="navbar-toggler"
-					type="button"
-					data-toggle="collapse"
-					data-target="#navbarToggleExternalContent"
-					aria-controls="navbarToggleExternalContent"
-					aria-expanded="false"
-					aria-label="Toggle navigation"
-					onclick="showNav()"
+		<div class="collapsedNav" id="navbarCollapsed">
+			<button onclick="showNav()" class="btn btn-primary-outline closeBtn">
+				X
+			</button>
+			<ul class="nav-links">
+				<li class="nav-item">
+					<a onclick="showNav()" href="#home" data-text="HOME" id="home-link"
+						>HOME</a
+					>
+				</li>
+				<li class="nav-item">
+					<a onclick="showNav()" href="#about" data-text="ABOUT" id="about-link"
+						>ABOUT</a
+					>
+				</li>
+				<li class="nav-item">
+					<a
+						onclick="showNav()"
+						href="#portfolio"
+						data-text="PORTFOLIO"
+						id="portfolio-link"
+						>PORTFOLIO</a
+					>
+				</li>
+				<li class="nav-item">
+					<a href="#contact" data-text="CONTACT" id="contact-link">CONTACT</a>
+				</li>
+			</ul>
+		</div>
+		<div class="contentVisible" id="visibleContent">
+			<header class="header">
+				<nav id="navMain" class="navbar fixed-top px-5">
+					<a class="navbar-brand" href="#home"
+						><img class="imgBrand" src="img/Assinatura2.png" alt="logo"
+					/></a>
+					<button
+						class="navbar-toggler"
+						type="button"
+						data-toggle="collapse"
+						data-target="#navbarToggleExternalContent"
+						aria-controls="navbarToggleExternalContent"
+						aria-expanded="false"
+						aria-label="Toggle navigation"
+						onclick="showNav()"
+					>
+						<i class="navbarToggleIcon bi bi-list-nested"></i>
+					</button>
+				</nav>
+			</header>
+
+			<div
+				class="container-fluid d-flex justify-content-between px-5 align-items-center mainContainer container0"
+				id="home"
+			>
+				<div
+					class="socialMediaIcons container d-flex flex-column align-items-start"
 				>
-					<i class="navbarToggleIcon bi bi-list-nested"></i>
-				</button>
-			</nav>
-		</header>
+					<a href="https://github.com/GuiMarcos" target="_blank"
+						><i class="bi bi-github"></i
+					></a>
+					<a
+						href="https://www.linkedin.com/in/guilherme-marcos-689b91165/"
+						target="_blank"
+						><i class="bi bi-linkedin"></i
+					></a>
+				</div>
+				<div class="centralText container">
+					<p class="myName text-center">
+						<span class="green">Guilherme</span> Marcos
+					</p>
+					<p class="myJob text-center">
+						I'm a <span class="glitch" data-text="Dev">Dev</span>
+					</p>
+				</div>
 
-		<div
-			class="container-fluid d-flex justify-content-between px-5 align-items-center mainContainer container0"
-			id="home"
-		>
+				<div class="main-image">
+					<img src="./img/myPic.png" alt="Gui Marcos (me)" />
+				</div>
+
+				<div
+					class="contactIcons container d-flex flex-column align-items-end justify-content-center"
+				>
+					<a href="" onclick="telephone()"><i class="bi bi-telephone"></i></a>
+					<a href="" onclick="email()"><i class="bi bi-envelope-at"></i></a>
+				</div>
+
+				<div id="animationParticle" class="animation-wrapper">
+					<div class="particle particle-1"></div>
+					<div class="particle particle-2"></div>
+					<div class="particle particle-3"></div>
+					<div class="particle particle-4"></div>
+				</div>
+
+				<div class="arrow glow" id="arrow">
+					<a href="#about"><i class="bi bi-arrow-down-square"></i></a>
+				</div>
+			</div>
+
 			<div
-				class="socialMediaIcons container d-flex flex-column align-items-start"
+				id="about"
+				class="mainContainer container-fluid container1 d-flex flex-column justify-content-center"
 			>
-				<a href="https://github.com/GuiMarcos" target="_blank"
-					><i class="bi bi-github"></i
-				></a>
-				<a
-					href="https://www.linkedin.com/in/guilherme-marcos-689b91165/"
-					target="_blank"
-					><i class="bi bi-linkedin"></i
-				></a>
-			</div>
-			<div class="centralText container">
-				<p class="myName text-center">
-					<span class="nameMain">Guilherme</span> Marcos
-				</p>
-				<p class="myJob text-center">
-					I'm a <span class="glitch" data-text="Dev">Dev</span>
-				</p>
-			</div>
-
-			<div class="main-image">
-				<img src="./img/myPic.png" alt="Gui Marcos (me)" />
-			</div>
-
-			<div
-				class="contactIcons container d-flex flex-column align-items-end justify-content-center"
-			>
-				<a href="" onclick="telephone()"><i class="bi bi-telephone"></i></a>
-				<a href="" onclick="email()"><i class="bi bi-envelope-at"></i></a>
-			</div>
-
-			<div id="animationParticle" class="animation-wrapper">
-				<div class="particle particle-1"></div>
-				<div class="particle particle-2"></div>
-				<div class="particle particle-3"></div>
-				<div class="particle particle-4"></div>
-			</div>
-
-			<div class="arrow glow" id="arrow">
-				<a href="#about"><i class="bi bi-arrow-down-square"></i></a>
+				<div class="sectionTitle mx-auto">
+					<p class="text-center aboutTop h2">
+						About <span class="green">Me</span>
+					</p>
+					<div class="aboutDetail"></div>
+				</div>
+				<div class="contentAbout container mx-auto mt-5 row">
+					<div class="imgBox my-auto col-5">
+						<img
+							src="./img/profile-pic (1).png"
+							alt="Me Again"
+							class="img-fluid myPic"
+						/>
+					</div>
+					<div class="textBox col-6">
+						<p class="myName h3">I am <span class="green">Guilherme</span></p>
+						<p class="myJob">
+							Working to become a <span class="green">Dev</span>
+						</p>
+						<p class="textAbout">
+							I am a student in Paraná, Brazil, and I am incredibly dedicated
+							and committed to my future career. Currently, I am pursuing my
+							studies to become a proficient Full-Stack Web Developer. I have
+							acquired certain skills necessary to build great websites, but I
+							am still acquiring others. In order to enhance my hard skills and
+							soft skills, I am seeking my first experience in the job market as
+							a junior or intern, so that I can work on awesome projects
+						</p>
+						<div class="topics">
+							<div class="row">
+								<p class="col">
+									<span class="green">Name: </span>Guilherme Marcos
+								</p>
+								<p class="col"><span class="green">Age: </span>21</p>
+							</div>
+							<div class="row">
+								<p class="col">
+									<span class="green">Phone: </span>+55(51)98240-0703
+								</p>
+								<p class="col">
+									<span class="green">Addres: </span>Rio Branco do Sul, PR, BR
+								</p>
+							</div>
+							<div class="row">
+								<p class="col">
+									<span class="green">Website: </span
+									><a target="_blank" href="https://guimarcos.github.io/"
+										>GuiMarcos.github.io</a
+									>
+								</p>
+								<p class="col">
+									<span class="green">E-mail: </span>guilherme.amarcos@gmail.com
+								</p>
+							</div>
+						</div>
+						<button class="btn btn-outline-primary px-5 py-2 cvDownloadBtn">
+							Download My CV
+						</button>
+					</div>
+				</div>
 			</div>
 		</div>
 
-		<div
-			id="about"
-			class="mainContainer container-fluid container1 d-flex justify-content-between px-5 align-items-center"
-		></div>
 		<script src="js/basic.js"></script>
 
 		<!-- Script Bootstrap -->
