@@ -1,0 +1,19 @@
+.glow {
+	-webkit-animation: glow 1s ease-in-out infinite alternate;
+	-moz-animation: glow 1s ease-in-out infinite alternate;
+	animation: glow 1s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+	from {
+		text-shadow: 0 0 10px $bg-light, 0 0 20px $bg-light,
+			0 0 30px $secondary-color, 0 0 40px $secondary-color,
+			0 0 50px $secondary-color, 0 0 60px $secondary-color,
+			0 0 70px $secondary-color;
+	}
+	to {
+		text-shadow: 0 0 20px $bg-light, 0 0 30px $main-color, 0 0 40px $main-color,
+			0 0 50px $main-color, 0 0 60px $main-color, 0 0 70px $main-color,
+			0 0 80px $main-color;
+	}
+}

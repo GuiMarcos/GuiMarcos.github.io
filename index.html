@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Guilherme Marcos Portfolio</title>
+		<!-- Links Bootstrap -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+			crossorigin="anonymous"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+		/>
+
+		<!-- Link css -->
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<header class="header">
+			<div class="collapsedNav" id="navbarCollapsed">
+				<button onclick="showNav()" class="btn btn-primary-outline closeBtn">
+					X
+				</button>
+				<ul class="nav-links">
+					<li class="nav-item">
+						<a onclick="showNav()" href="#home" data-text="HOME" id="home-link"
+							>HOME</a
+						>
+					</li>
+					<li class="nav-item">
+						<a
+							onclick="showNav()"
+							href="#about"
+							data-text="ABOUT"
+							id="about-link"
+							>ABOUT</a
+						>
+					</li>
+					<li class="nav-item">
+						<a
+							onclick="showNav()"
+							href="#portfolio"
+							data-text="PORTFOLIO"
+							id="portfolio-link"
+							>PORTFOLIO</a
+						>
+					</li>
+					<li class="nav-item">
+						<a href="#contact" data-text="CONTACT" id="contact-link">CONTACT</a>
+					</li>
+				</ul>
+			</div>
+			<nav id="navMain" class="navbar fixed-top px-5">
+				<a class="navbar-brand" href="#home"
+					><img class="imgBrand" src="img/Assinatura2.png" alt="logo"
+				/></a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-toggle="collapse"
+					data-target="#navbarToggleExternalContent"
+					aria-controls="navbarToggleExternalContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+					onclick="showNav()"
+				>
+					<i class="navbarToggleIcon bi bi-list-nested"></i>
+				</button>
+			</nav>
+		</header>
+
+		<div
+			class="container-fluid d-flex justify-content-between px-5 align-items-center mainContainer container0"
+			id="home"
+		>
+			<div
+				class="socialMediaIcons container d-flex flex-column align-items-start"
+			>
+				<a href="https://github.com/GuiMarcos" target="_blank"
+					><i class="bi bi-github"></i
+				></a>
+				<a
+					href="https://www.linkedin.com/in/guilherme-marcos-689b91165/"
+					target="_blank"
+					><i class="bi bi-linkedin"></i
+				></a>
+			</div>
+			<div class="centralText container">
+				<p class="myName text-center">
+					<span class="nameMain">Guilherme</span> Marcos
+				</p>
+				<p class="myJob text-center">
+					I'm a <span class="glitch" data-text="Dev">Dev</span>
+				</p>
+			</div>
+
+			<div class="main-image">
+				<img src="./img/myPic.png" alt="Gui Marcos (me)" />
+			</div>
+
+			<div
+				class="contactIcons container d-flex flex-column align-items-end justify-content-center"
+			>
+				<a href="" onclick="telephone()"><i class="bi bi-telephone"></i></a>
+				<a href="" onclick="email()"><i class="bi bi-envelope-at"></i></a>
+			</div>
+
+			<div id="animationParticle" class="animation-wrapper">
+				<div class="particle particle-1"></div>
+				<div class="particle particle-2"></div>
+				<div class="particle particle-3"></div>
+				<div class="particle particle-4"></div>
+			</div>
+
+			<div class="arrow glow">
+				<a href="#about"><i class="bi bi-arrow-down-square"></i></a>
+			</div>
+		</div>
+
+		<div
+			id="about"
+			class="mainContainer container-fluid container1 d-flex justify-content-between px-5 align-items-center"
+		></div>
+		<script src="js/basic.js"></script>
+
+		<!-- Script Bootstrap -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
