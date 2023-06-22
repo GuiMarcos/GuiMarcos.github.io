@@ -38,6 +38,15 @@
 				<li class="nav-item">
 					<a
 						onclick="showNav()"
+						href="#skills"
+						data-text="SKILLS"
+						id="skills-link"
+						>SKILLS</a
+					>
+				</li>
+				<li class="nav-item">
+					<a
+						onclick="showNav()"
 						href="#portfolio"
 						data-text="PORTFOLIO"
 						id="portfolio-link"
@@ -126,7 +135,7 @@
 					<p class="text-center aboutTop h2">
 						About <span class="green">Me</span>
 					</p>
-					<div class="aboutDetail"></div>
+					<div class="titleDetail"></div>
 				</div>
 				<div class="contentAbout container mx-auto mt-5 row">
 					<div class="imgBox my-auto col-5">
@@ -177,9 +186,126 @@
 								</p>
 							</div>
 						</div>
-						<button class="btn btn-outline-primary px-5 py-2 cvDownloadBtn">
+						<a
+							class="btn btn-outline-primary px-5 py-2 cvDownloadBtn"
+							type="button"
+							href="./cv/Currículo.pdf"
+							download="CV_Guilherme"
+						>
 							Download My CV
-						</button>
+						</a>
+					</div>
+				</div>
+			</div>
+
+			<div
+				class="mainContainer container-fluid container2 d-flex flex-column justify-content-center align-items-center"
+				id="skills"
+			>
+				<div class="sectionTitle mx-auto my-5">
+					<p class="text-center skillsTop h2">
+						My <span class="green">Skills</span>
+					</p>
+					<div class="titleDetail"></div>
+				</div>
+				<div class="skills-content text-center">
+					<div class="row">
+						<div class="skill-html skill col-lg-6 col-sm-12">
+							<div class="skill-text">
+								<div class="html">HTML/CSS</div>
+							</div>
+							<div class="barCapac">
+								<div class="html-prog text-center barFlux">95%</div>
+							</div>
+						</div>
+						<div class="skill-js skill col-lg-6 col-sm-12">
+							<div class="skill-text">
+								<div class="js">JS</div>
+							</div>
+							<div class="barCapac">
+								<div class="js-prog text-center barFlux">65%</div>
+							</div>
+						</div>
+						<div class="skill-sass skill col-lg-6 col-sm-12">
+							<div class="skill-text">
+								<div class="sass">SASS</div>
+							</div>
+							<div class="barCapac">
+								<div class="sass-prog text-center barFlux">75%</div>
+							</div>
+						</div>
+						<div class="skill-bootstrap skill col-lg-6 col-sm-12">
+							<div class="skill-text">
+								<div class="bootstrap">Bootstrap</div>
+							</div>
+							<div class="barCapac">
+								<div class="bootstrap-prog text-center barFlux">75%</div>
+							</div>
+						</div>
+						<div class="skill-react skill col-lg-6 col-sm-12">
+							<div class="skill-text">
+								<div class="react">React</div>
+							</div>
+							<div class="barCapac">
+								<div class="react-prog text-center barFlux">5%</div>
+							</div>
+						</div>
+						<div class="skill-jQuery skill col-lg-6 col-sm-12 d-none">
+							<div class="skill-text">
+								<div class="jQuery">jQuery</div>
+							</div>
+							<div class="barCapac">
+								<div class="jQuery-prog text-center barFlux">5%</div>
+							</div>
+						</div>
+						<div class="skill-java skill col-lg-6 col-sm-12">
+							<div class="skill-text">
+								<div class="java">Java</div>
+							</div>
+							<div class="barCapac">
+								<div class="java-prog text-center barFlux">50%</div>
+							</div>
+						</div>
+						<div class="skill-poo skill col-lg-6 col-sm-12">
+							<div class="skill-text">
+								<div class="poo">OOP</div>
+							</div>
+							<div class="barCapac">
+								<div class="poo-prog text-center barFlux">55%</div>
+							</div>
+						</div>
+						<div class="skill-node skill col-lg-6 col-sm-12 d-none">
+							<div class="skill-text">
+								<div class="nodeJs">Node Js</div>
+							</div>
+							<div class="barCapac">
+								<div class="nodeJs-prog text-center barFlux">5%</div>
+							</div>
+						</div>
+						<div class="skill-git skill col-lg-6 col-sm-12">
+							<div class="skill-text">
+								<div class="git">Git/Github</div>
+							</div>
+							<div class="barCapac">
+								<div class="git-prog text-center barFlux">75%</div>
+							</div>
+						</div>
+						<div class="skill-typescript skill col-lg-6 col-sm-12 d-none">
+							<div class="skill-text">
+								<div class="typescript">Typescript</div>
+							</div>
+							<div class="barCapac">
+								<div class="typescript-prog text-center barFlux">5%</div>
+							</div>
+						</div>
+						<div class="skill-bulma skill col-lg-6 col-sm-12 d-none">
+							<div class="skill-text">
+								<div class="bulma">Bulma</div>
+							</div>
+							<div class="barCapac">
+								<div class="bulma-prog text-center barFlux">5%</div>
+							</div>
+						</div>
 					</div>
 				</div>
 			</div>

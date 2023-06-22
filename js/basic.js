@@ -8,7 +8,7 @@ function showNav() {
 	} else {
 		isElementVisible(document.getElementById("home"));
 		isElementVisible(document.getElementById("about"));
-		//isElementVisible(skills);
+		isElementVisible(skills);
 		//isElementVisible(portfolio);
 		//isElementVisible(contact);
 		navbarCollapsed.style.display = "flex";
@@ -28,4 +28,8 @@ function isElementVisible(element) {
 		element.classList.add("is-active");
 	else element.classList.remove("is-active");
 	return;
+}
+
+function downloadUrl(url) {
+	window.open(url, "_self");
 }
