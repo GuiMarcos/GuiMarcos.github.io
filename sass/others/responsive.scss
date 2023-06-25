@@ -1,0 +1,34 @@
+@media (max-width: 1200px) {
+	.container0 {
+		.main-image {
+			display: none;
+		}
+	}
+}
+
+@media (max-width: 1000px) {
+	.container1 {
+		.imgBox {
+			display: none;
+		}
+	}
+	.container1 {
+		padding-bottom: 10px;
+	}
+}
+
+@media (max-width: 500px) {
+	.container0 {
+		padding: auto 0;
+
+		a i {
+			display: none;
+		}
+
+		.centralText {
+			.myName {
+				font-size: 3rem;
+			}
+		}
+	}
+}

@@ -16,7 +16,7 @@ a {
 .navbar {
 	background-color: $bg-dark;
 	.imgBrand {
-		width: 100px;
+		width: 6.25rem;
 		filter: invert(60%);
 		&:hover {
 			filter: invert(100%);
@@ -45,20 +45,20 @@ a {
 		justify-content: center;
 		align-items: center;
 		gap: 3rem;
-		font-size: 50px;
+		font-size: 3.1rem;
 
 		.nav-item a {
 			padding: 10px;
 			text-decoration: none;
 			color: $gray;
-			font-size: 30px;
+			font-size: 1.85rem;
 			opacity: 1;
 			transition: all 0.4s ease;
 			font-family: "Bree Serif";
 
 			&:hover {
 				color: $bg-light;
-				font-size: 50px;
+				font-size: 3.1rem;
 			}
 
 			&:hover::before {
@@ -94,7 +94,7 @@ a {
 		right: 10%;
 		top: 10%;
 		color: $gray;
-		font-size: 60px;
+		font-size: 3.75rem;
 		font-family: cursive;
 		border: none;
 		&:hover {
@@ -114,7 +114,7 @@ a {
 
 	.sectionTitle {
 		p {
-			font-size: 40px;
+			font-size: 2.4rem;
 			font-family: "Rubik", sans-serif;
 			font-weight: 700;
 			span {
@@ -122,7 +122,7 @@ a {
 			}
 		}
 		.titleDetail {
-			height: 3px;
+			height: 0.2rem;
 			background-size: 100% 100%;
 			background-position: 0px 0px;
 			background-image: linear-gradient(
@@ -176,12 +176,12 @@ a {
 		background-size: cover;
 		background-position: center;
 		width: 40%;
-		height: 100vh;
 		right: 0%;
 		z-index: -1;
 
 		img {
 			height: 100vh;
+			width: auto;
 			float: right;
 			filter: drop-shadow(1rem 0 0.75rem $main-color);
 		}
@@ -194,20 +194,20 @@ a {
 	.contentAbout {
 		.textBox {
 			.myName {
-				font-size: 35px;
+				font-size: 2.1rem;
 				font-weight: 700;
 			}
 			.myJob {
-				font-size: 20px;
+				font-size: 1.25rem;
 				font-family: "Teko";
 				text-transform: uppercase;
 			}
 			.textAbout {
-				font-size: 18px;
+				font-size: 1.1rem;
 				text-align: justify;
 			}
 			.topics {
-				font-size: 15px;
+				font-size: 0.9rem;
 				font-weight: 600;
 				a {
 					color: $bg-light;
@@ -219,7 +219,7 @@ a {
 			.cvDownloadBtn {
 				border-color: $main-color;
 				color: $main-color;
-				border-radius: 15px;
+				border-radius: 0.9rem;
 				&:hover {
 					background-color: $secondary-color;
 					color: $bg-light;
