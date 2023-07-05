@@ -246,61 +246,13 @@ a {
       }
       .barCapac {
         margin: 5px auto;
-        background-color: $secondary-color;
+        background-color: $main-color;
         border-radius: 10px;
         height: 40px;
         display: flex;
         padding: 0 5px;
         align-items: center;
-
-        .barFlux {
-          background-color: $main-color;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          border-radius: 5px;
-          height: 25px;
-        }
-
-        .html-prog {
-          width: 95%;
-        }
-        .js-prog {
-          width: 65%;
-        }
-        .sass-prog {
-          width: 75%;
-        }
-        .bootstrap-prog {
-          width: 75%;
-        }
-        .react-prog {
-          width: 10%;
-        }
-        .jQuery-prog {
-          width: 10%;
-        }
-        .java-prog {
-          width: 50%;
-        }
-        .poo-prog {
-          width: 55%;
-        }
-        .nodeJs-prog {
-          width: 10%;
-        }
-        .git-prog {
-          width: 75%;
-        }
-        .typescrip-prog {
-          width: 10%;
-        }
-        .bulma-prog {
-          width: 10%;
-        }
-        .c-prog {
-          width: 50%;
-        }
+        justify-content: center;
       }
     }
   }
