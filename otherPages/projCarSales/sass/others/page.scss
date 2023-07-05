@@ -1,0 +1,274 @@
+.paragraph {
+	font-size: 1.1rem;
+	font-weight: 400;
+	font-family: Roboto;
+}
+
+.btn {
+	font-family: Roboto;
+}
+
+body {
+	color: black;
+}
+
+.container1 {
+	padding: 0;
+	margin: 0 mx-auto;
+}
+
+.topBackground {
+	background-color: $main-color;
+	width: 100%;
+	height: 31.25rem;
+	z-index: -1;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+header .container {
+	max-width: 62.5rem;
+}
+
+header .nav-item a {
+	font-size: 1.1rem;
+	color: $secondary-color;
+	font-family: Roboto;
+}
+
+header .navbar .navbar-brand {
+	font-size: 2.3rem;
+	font-weight: 400;
+	color: $secondary-color;
+}
+
+header .navbar .navbar-brand span {
+	font-weight: 700;
+}
+
+header .navbar .dropdown .dropdown-menu {
+	border-color: $secondary-color;
+}
+
+header .navbar .dropdown .dropdown-menu .dropdown-item {
+	transition: 0.4s;
+
+	&:hover {
+		background-color: $secondary-color;
+		color: #fff;
+	}
+}
+header .navbar form button {
+	max-width: 9.4rem;
+	height: 2.5rem;
+	color: $secondary-color;
+	border-color: $secondary-color;
+	transition: 0.4s;
+
+	&:hover {
+		background-color: $secondary-color;
+	}
+}
+
+.textBox .title {
+	font-size: 2.25rem;
+	font-weight: 700;
+}
+
+.content {
+	max-width: 62.5rem;
+}
+
+.content .carousel {
+	background-color: $secondary-color;
+	max-width: 62.5rem;
+	width: 100%;
+	height: 31.2rem;
+	color: #fff;
+}
+
+.content .carousel .textBoxCarousel .paragraph {
+	font-size: 2em;
+	font-weight: 600;
+}
+
+.content .carousel .carousel-item a img {
+	height: 25rem;
+}
+
+.content .catalog .searchCarDiv {
+	background-color: $light-gray;
+	height: 11.1rem;
+}
+
+.content .catalog .searchCarDiv input {
+	color: black;
+	font-size: 1.1rem;
+	font-weight: 400;
+}
+
+.content .catalog .searchCarDiv button {
+	background-color: $secondary-color;
+	max-width: 200px;
+	color: #fff;
+	font-size: 1.5rem;
+	font-weight: 700;
+}
+
+.content .catalog .divGrid {
+	padding: 0;
+}
+
+.content .catalog .divGrid .card {
+	background-color: $light-gray;
+	border: 0;
+	padding: 1.25rem;
+	max-width: 100%;
+	height: 100%;
+}
+
+.content .catalog .divGrid .card .imgBox {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 16rem;
+}
+
+.content .catalog .divGrid .card .btnBuy {
+	background-color: $secondary-color;
+	border: none;
+	font-size: 1.1rem;
+	font-weight: 700;
+}
+
+.content .catalog .divGrid .card .card-text {
+	font-style: italic;
+	color: $gray-font;
+}
+
+.content .catalog .divGrid .card .card-title {
+	font-size: 1.1rem;
+	font-weight: 700;
+}
+
+.content .about .contentBox {
+	background-color: $light-gray;
+	display: flex;
+}
+
+.content .about .contentBox .imgBox {
+	background-color: $gray;
+	display: flex;
+	justify-content: center;
+}
+
+.content .about .contentBox .imgBox img {
+	max-width: 18.75rem;
+}
+
+.content .about .contentBox .textSection .sectionTitle {
+	display: flex;
+	justify-content: flex-end;
+	font-weight: 700;
+}
+
+.content .about .contentBox .textSection .sectionText {
+	color: $gray-font;
+	text-align: end;
+}
+
+.features {
+	background-color: $light-gray;
+}
+
+.features .container {
+	max-width: 62.5rem;
+	margin: 3rem auto;
+}
+
+.features .featureBox {
+	background-color: #fff;
+}
+
+.features .featureBox .feature {
+	border: 2px solid $light-gray;
+	max-width: 26.9rem;
+	width: 100%;
+}
+
+.features .featureBox .feature .featureText {
+	font-weight: 500;
+}
+.features .featureBox .feature .featureTitle {
+	color: black;
+	font-weight: 700;
+}
+
+.contact {
+	background-color: $main-color;
+	color: #fff;
+}
+
+.contact .container {
+	max-width: 62.5rem;
+}
+
+.contact .paragraph {
+	font-weight: 700;
+	margin-top: 2rem;
+}
+
+.contact a {
+	font-family: Roboto;
+	text-decoration: none;
+	color: #fff;
+	font-weight: 500;
+	font-size: 1rem;
+	padding: 0.5rem 0;
+}
+
+.contact a i {
+	font-size: 1.8rem;
+	margin-right: 1rem;
+}
+
+footer {
+	background-color: $secondary-color;
+	color: white;
+}
+
+footer .paragraph {
+	font-size: 0.75rem;
+	font-weight: 300;
+}
+
+@media (max-width: 770px) {
+	.content .carolseuDiv {
+		display: none;
+	}
+
+	.topBackground {
+		height: 10rem;
+	}
+}
+
+@media (max-width: 600px) {
+	.content .about .contentBox .imgBox img {
+		display: none;
+	}
+
+	.features .featureBox .row {
+		display: flex;
+		flex-direction: column;
+		gap: 10px;
+	}
+
+	.features .featureBox .imgBox img {
+		display: none;
+	}
+
+	.features .featureBox .feature {
+		width: 60%;
+	}
+}

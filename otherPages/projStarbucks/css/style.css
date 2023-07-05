@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  color: black;
+  background-color: #f2f0eb;
+  overflow: hidden; /* Hide scrollbars */
+}
+
+header .navbar .nav-link {
+  color: black;
+  font-size: large;
+}
+
+header .navbar .dropdown-menu {
+  background-color: #006241;
+}
+
+header .navbar .dropdown-divider {
+  background-color: white;
+}
+
+header .navbar .dropdown-item {
+  color: white;
+  transition: 0.3s;
+}
+header .navbar .dropdown-item:hover {
+  background-color: #d4e9e2;
+  color: #006241;
+}
+
+header .navbar .btnLearnMore {
+  background-color: #006241;
+  transition: 0.3s;
+}
+header .navbar .btnLearnMore:hover {
+  background-color: #00754a;
+}
+
+.mainContent .centerContent .textBox {
+  width: 600px;
+}
+
+.mainContent .centerContent .textBox .brand {
+  font-weight: 500;
+  font-size: 4.5em;
+  line-height: 1.4em;
+  color: #333;
+}
+
+.mainContent .centerContent .textBox .brand span {
+  color: #006241;
+  font-size: 1.2em;
+  font-weight: 900;
+}
+
+.mainContent .centerContent .imgBox {
+  width: 600px;
+  padding-right: 5rem;
+}
+
+.mainContent .centerContent .imgBox img {
+  width: 340px;
+}
+
+.mainContent .socialBox {
+  position: absolute;
+  top: 40%;
+  right: 30px;
+}
+
+.mainContent .socialBox .bi {
+  font-size: 33px;
+  color: #d4e9e2;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.mainContent .socialBox .bi:hover {
+  transform: translateX(-15px);
+}
+
+.mainContent .circle {
+  width: 100%;
+  height: 100vh;
+  background-color: #006241;
+  position: absolute;
+  top: 0;
+  left: 0;
+  clip-path: circle(600px at right 950px);
+  z-index: -1;
+}
+
+footer .thumb .items {
+  cursor: pointer;
+  transition: 0.5s;
+}
+footer .thumb .items:hover {
+  transform: translateY(-15px);
+}
+
+footer .thumb .items img {
+  width: 80px;
+}
+
+/*# sourceMappingURL=style.css.map */

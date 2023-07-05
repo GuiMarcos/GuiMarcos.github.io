@@ -1,0 +1,109 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: black;
+	background-color: $warm-neutral;
+
+	overflow: hidden; /* Hide scrollbars */
+}
+
+header .navbar .nav-link {
+	color: black;
+	font-size: large;
+}
+
+header .navbar .dropdown-menu {
+	background-color: $green;
+}
+
+header .navbar .dropdown-divider {
+	background-color: white;
+}
+
+header .navbar .dropdown-item {
+	color: white;
+	transition: 0.3s;
+
+	&:hover {
+		background-color: $light-green;
+		color: $green;
+	}
+}
+
+header .navbar .btnLearnMore {
+	background-color: $green;
+	transition: 0.3s;
+	&:hover {
+		background-color: $accend-green;
+	}
+}
+
+.mainContent .centerContent .textBox {
+	width: 600px;
+}
+
+.mainContent .centerContent .textBox .brand {
+	font-weight: 500;
+	font-size: 4.5em;
+	line-height: 1.4em;
+	color: $aux-black;
+}
+
+.mainContent .centerContent .textBox .brand span {
+	color: $green;
+	font-size: 1.2em;
+	font-weight: 900;
+}
+
+.mainContent .centerContent .imgBox {
+	width: 600px;
+	padding-right: 5rem;
+}
+
+.mainContent .centerContent .imgBox img {
+	width: 340px;
+}
+
+.mainContent .socialBox {
+	position: absolute;
+	top: 40%;
+	right: 30px;
+}
+
+.mainContent .socialBox .bi {
+	font-size: 33px;
+	color: $light-green;
+	cursor: pointer;
+	transition: 0.4s;
+
+	&:hover {
+		transform: translateX(-15px);
+	}
+}
+
+.mainContent .circle {
+	width: 100%;
+	height: 100vh;
+	background-color: $green;
+	position: absolute;
+	top: 0;
+	left: 0;
+	clip-path: circle(600px at right 950px);
+	z-index: -1;
+}
+
+footer .thumb .items {
+	cursor: pointer;
+	transition: 0.5s;
+
+	&:hover {
+		transform: translateY(-15px);
+	}
+}
+
+footer .thumb .items img {
+	width: 80px;
+}

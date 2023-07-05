@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Link Bootstrap Css -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+			crossorigin="anonymous"
+		/>
+
+		<!-- Link Bootstrap icons -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+		/>
+
+		<!-- Link Css -->
+		<link rel="stylesheet" href="../css/style.css" />
+
+		<link
+			rel="shortcut icon"
+			href="../resources/img/favicon.jpeg"
+			type="image/x-icon"
+		/>
+
+		<title>Car Sales</title>
+	</head>
+
+	<body>
+		<div class="container-fluid container1 mt-5 mx-auto">
+			<div class="topBackground"></div>
+			<header class="mb-5">
+				<div class="container">
+					<nav class="navbar navbar-expand-lg">
+						<div class="container-fluid">
+							<a class="navbar-brand" href="">Car<span>Sales</span></a>
+							<button
+								class="navbar-toggler"
+								type="button"
+								data-bs-toggle="collapse"
+								data-bs-target="#navbarSupportedContent"
+								aria-controls="navbarSupportedContent"
+								aria-expanded="false"
+								aria-label="Toggle navigation"
+							>
+								<span class="navbar-toggler-icon"></span>
+							</button>
+							<div class="collapse navbar-collapse" id="navbarSupportedContent">
+								<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+									<li class="nav-item mx-3">
+										<a class="nav-link" aria-current="page" href="#catalog"
+											>Catalog</a
+										>
+									</li>
+									<li class="nav-item mx-3">
+										<a class="nav-link" href="#about">About</a>
+									</li>
+									<li class="nav-item dropdown mx-3">
+										<a
+											class="nav-link dropdown-toggle"
+											href="#"
+											role="button"
+											data-bs-toggle="dropdown"
+											aria-expanded="false"
+										>
+											Features
+										</a>
+										<ul class="dropdown-menu">
+											<li>
+												<a class="dropdown-item" href="#features">Title1</a>
+											</li>
+											<li>
+												<a class="dropdown-item" href="#features">Title2</a>
+											</li>
+										</ul>
+									</li>
+								</ul>
+								<form class="d-flex" role="login">
+									<button
+										class="btn btn-outline-primary btnLogin"
+										type="submit"
+									>
+										Login
+									</button>
+								</form>
+							</div>
+						</div>
+					</nav>
+				</div>
+			</header>
+
+			<section
+				class="container-fluid d-flex flex-column align-items-center content"
+			>
+				<div class="container-fluid text-center carolseuDiv">
+					<div
+						class="carousel slide rounded-4 mb-5"
+						id="carousel"
+						data-bs-ride="carousel"
+					>
+						<div class="text-center mt-2 textBoxCarousel">
+							<p class="paragraph">The perfect car to you!</p>
+						</div>
+						<div class="carousel-indicators">
+							<button
+								type="button"
+								data-bs-target="#carousel"
+								data-bs-slide-to="0"
+								class="active"
+								aria-current="true"
+								aria-label="Slide 1"
+							></button>
+							<button
+								type="button"
+								data-bs-target="#carousel"
+								data-bs-slide-to="1"
+								aria-label="Slide 2"
+							></button>
+							<button
+								type="button"
+								data-bs-target="#carousel"
+								data-bs-slide-to="2"
+								aria-label="Slide 3"
+							></button>
+						</div>
+						<div class="carousel-inner my-3">
+							<div class="carousel-item active" data-bs-interval="3000">
+								<a href="#catalog">
+									<img
+										src="../resources/img/dodgeCarousel.jpeg"
+										class="d-block mx-auto w-75"
+										alt="Dodge on road"
+									/>
+								</a>
+							</div>
+							<div class="carousel-item" data-bs-interval="3000">
+								<a href="#catalog">
+									<img
+										src="../resources/img/gtrCarousel.jpeg"
+										class="d-block mx-auto w-75"
+										alt="Gtr on road"
+									/>
+								</a>
+							</div>
+							<div class="carousel-item" data-bs-interval="3000">
+								<a href="#catalog">
+									<img
+										src="../resources/img/mustangCarousel.jpg"
+										class="d-block mx-auto w-75"
+										alt="Mustang on road"
+									/>
+								</a>
+							</div>
+						</div>
+						<button
+							class="carousel-control-prev"
+							type="button"
+							data-bs-target="#carousel"
+							data-bs-slide="prev"
+						>
+							<span
+								class="carousel-control-prev-icon"
+								aria-hidden="true"
+							></span>
+							<span class="visually-hidden">Previous</span>
+						</button>
+						<button
+							class="carousel-control-next"
+							type="button"
+							data-bs-target="#carousel"
+							data-bs-slide="next"
+						>
+							<span
+								class="carousel-control-next-icon"
+								aria-hidden="true"
+							></span>
+							<span class="visually-hidden">Next</span>
+						</button>
+					</div>
+				</div>
+
+				<div class="container-fluid catalog mb-5 mt-5" id="catalog">
+					<div class="textBox">
+						<p class="paragraph">Find what you want</p>
+						<p class="paragraph title">Catalog</p>
+					</div>
+					<div class="input-group mb-5 px-5 py-5 rounded-3 searchCarDiv">
+						<input
+							type="text"
+							class="form-control inputSearch"
+							placeholder="Choose Your Favorite Model"
+						/>
+						<button
+							class="btn btn-outline-secondary btnSearch"
+							type="button"
+							id="searchBtn"
+						>
+							Search
+						</button>
+					</div>
+					<div class="container-sm divGrid">
+						<div class="row justify-content-between my-4">
+							<div class="col-lg-4 col-md-6 col-sm-12 my-2">
+								<div class="card">
+									<div class="imgBox">
+										<img
+											src="../resources/img/dodgeMain.png"
+											class="card-img-top"
+											alt="..."
+										/>
+									</div>
+									<div class="card-body">
+										<h5 class="card-title">Dodge Challenger Hellcat</h5>
+										<p class="card-text paragraph">
+											Lorem ipsum dolor sit amet, consectetur adipising elit.
+											In.
+										</p>
+										<button
+											type="submit"
+											class="btn btn-primary btn-lg w-100 btnBuy"
+										>
+											I want this
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6 col-sm-12 my-2">
+								<div class="card">
+									<div class="imgBox">
+										<img
+											src="../resources/img/mustangMain.png"
+											class="card-img-top"
+											alt="..."
+										/>
+									</div>
+									<div class="card-body">
+										<h5 class="card-title">Ford Mustang</h5>
+										<p class="card-text paragraph">
+											Lorem ipsum dolor sit amet, consectetur adipising elit.
+											In.
+										</p>
+										<button
+											type="submit"
+											class="btn btn-primary btn-lg w-100 btnBuy"
+										>
+											I want this
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6 col-sm-12 my-2">
+								<div class="card">
+									<div class="imgBox">
+										<img
+											src="../resources/img/gtrMain.png"
+											class="card-img-top"
+											alt="..."
+										/>
+									</div>
+									<div class="card-body">
+										<h5 class="card-title">Nissan GT-R</h5>
+										<p class="card-text paragraph">
+											Lorem ipsum dolor sit amet, consectetur adipising elit.
+											In.
+										</p>
+										<button
+											type="submit"
+											class="btn btn-primary btn-lg w-100 btnBuy"
+										>
+											I want this
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6 col-sm-12 my-2">
+								<div class="card">
+									<div class="imgBox">
+										<img
+											src="../resources/img/dodgeMain.png"
+											class="card-img-top"
+											alt="..."
+										/>
+									</div>
+									<div class="card-body">
+										<h5 class="card-title">Dodge Challenger Hellcat</h5>
+										<p class="card-text paragraph">
+											Lorem ipsum dolor sit amet, consectetur adipising elit.
+											In.
+										</p>
+										<button
+											type="submit"
+											class="btn btn-primary btn-lg w-100 btnBuy"
+										>
+											I want this
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6 col-sm-12 my-2">
+								<div class="card">
+									<div class="imgBox">
+										<img
+											src="../resources/img/mustangMain.png"
+											class="card-img-top"
+											alt="..."
+										/>
+									</div>
+									<div class="card-body">
+										<h5 class="card-title">Ford Mustang</h5>
+										<p class="card-text paragraph">
+											Lorem ipsum dolor sit amet, consectetur adipising elit.
+											In.
+										</p>
+										<button
+											type="submit"
+											class="btn btn-primary btn-lg w-100 btnBuy"
+										>
+											I want this
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6 col-sm-12 my-2">
+								<div class="card">
+									<div class="imgBox">
+										<img
+											src="../resources/img/gtrMain.png"
+											class="card-img-top"
+											alt="..."
+										/>
+									</div>
+									<div class="card-body">
+										<h5 class="card-title">Nissan GT-R</h5>
+										<p class="card-text paragraph">
+											Lorem ipsum dolor sit amet, consectetur adipising elit.
+											In.
+										</p>
+										<button
+											type="submit"
+											class="btn btn-primary btn-lg w-100 btnBuy"
+										>
+											I want this
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6 col-sm-12 my-2">
+								<div class="card">
+									<div class="imgBox">
+										<img
+											src="../resources/img/dodgeMain.png"
+											class="card-img-top"
+											alt="..."
+										/>
+									</div>
+									<div class="card-body">
+										<h5 class="card-title">Dodge Challenger Hellcat</h5>
+										<p class="card-text paragraph">
+											Lorem ipsum dolor sit amet, consectetur adipising elit.
+											In.
+										</p>
+										<button
+											type="submit"
+											class="btn btn-primary btn-lg w-100 btnBuy"
+										>
+											I want this
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6 col-sm-12 my-2">
+								<div class="card">
+									<div class="imgBox">
+										<img
+											src="../resources/img/mustangMain.png"
+											class="card-img-top"
+											alt="..."
+										/>
+									</div>
+									<div class="card-body">
+										<h5 class="card-title">Ford Mustang</h5>
+										<p class="card-text paragraph">
+											Lorem ipsum dolor sit amet, consectetur adipising elit.
+											In.
+										</p>
+										<button
+											type="submit"
+											class="btn btn-primary btn-lg w-100 btnBuy"
+										>
+											I want this
+										</button>
+									</div>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-6 col-sm-12 my-2">
+								<div class="card">
+									<div class="imgBox">
+										<img
+											src="../resources/img/gtrMain.png"
+											class="card-img-top"
+											alt="..."
+										/>
+									</div>
+									<div class="card-body">
+										<h5 class="card-title">Nissan GT-R</h5>
+										<p class="card-text paragraph">
+											Lorem ipsum dolor sit amet, consectetur adipising elit.
+											In.
+										</p>
+										<button
+											type="submit"
+											class="btn btn-primary btn-lg w-100 btnBuy"
+										>
+											I want this
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="container-fluid mb-5 mt-5 about" id="about">
+					<div class="textBox">
+						<p class="paragraph">Know about us</p>
+						<p class="paragraph title">About</p>
+					</div>
+					<div class="contentBox rounded-3 px-2 py-4">
+						<div class="imgBox mx-3">
+							<img src="../resources/img/about.png" alt="" />
+						</div>
+						<div class="textSection px-3 py-5">
+							<p class="paragraph sectionTitle">Join technology and mobility</p>
+							<p class="paragraph sectionText">
+								Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+								Fugiat, eveniet. Minima hic ducimus corrupti, eligendi eum
+								numquam temporibus quis, repellendus molestiae eveniet officia
+								quod est velit aspernatur officiis facere assumenda maxime sunt
+								adipisci quos, at doloribus tenetur quibusdam recusandae?
+								Quaerat necessitatibus itaque id consequatur culpa totam
+								repudiandae perspiciatis impedit dolor nemo molestias corporis
+								nihil, ullam aperiam? Quas doloribus saepe perferendis eum
+								laboriosam nesciunt aliquid optio quidem qui, provident
+								expedita, reprehenderit sint enim ad aspernatur! Cupiditate,
+								earum! Accusantium enim accusamus, libero sapiente qui
+								architecto voluptas nobis, voluptatem dolor odio porro totam
+								aperiam dolorem maiores praesentium dolores odit atque labore
+								nulla. Vitae.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="container-fluid mx-auto mt-5 py-5 features" id="features">
+				<div class="container px-4">
+					<div class="textBox">
+						<p class="paragraph">What you can do</p>
+						<p class="paragraph title">Features</p>
+					</div>
+					<div class="featureBox rounded-3 align-self-center py-4">
+						<div class="row my-3 justify-content-evenly align-items-center">
+							<div
+								class="col-5 rounded-1 d-flex align-items-center gap-4 px-3 feature"
+								id="feature1"
+							>
+								<div class="imgBox">
+									<img src="../resources/img/feature-planet.png" alt="" />
+								</div>
+								<div class="textBox py-2">
+									<p class="paragraph my-1 featureTitle">Title</p>
+									<p class="paragraph featureText">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Maxime, quasi!
+									</p>
+								</div>
+							</div>
+							<div
+								class="col-5 rounded-1 d-flex align-items-center gap-4 px-3 feature"
+								id="feature1"
+							>
+								<div class="imgBox">
+									<img src="../resources/img/feature-planet.png" alt="" />
+								</div>
+								<div class="textBox py-2">
+									<p class="paragraph my-1 featureTitle">Title</p>
+
+									<p class="paragraph featureText">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Maxime, quasi!
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="row my-3 justify-content-evenly align-items-center">
+							<div
+								class="col-5 rounded-1 d-flex align-items-center gap-4 px-3 feature"
+								id="feature1"
+							>
+								<div class="imgBox">
+									<img src="../resources/img/feature-planet.png" alt="" />
+								</div>
+								<div class="textBox py-2">
+									<p class="paragraph my-1 featureTitle">Title</p>
+									<p class="paragraph featureText">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Maxime, quasi!
+									</p>
+								</div>
+							</div>
+							<div
+								class="col-5 rounded-1 d-flex align-items-center gap-4 px-3 feature"
+								id="feature1"
+							>
+								<div class="imgBox">
+									<img src="../resources/img/feature-planet.png" alt="" />
+								</div>
+								<div class="textBox py-2">
+									<p class="paragraph my-1 featureTitle">Title</p>
+
+									<p class="paragraph featureText">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Maxime, quasi!
+									</p>
+								</div>
+							</div>
+						</div>
+						<div class="row my-3 justify-content-evenly align-items-center">
+							<div
+								class="col-5 rounded-1 d-flex align-items-center gap-4 px-3 feature"
+								id="feature1"
+							>
+								<div class="imgBox">
+									<img src="../resources/img/feature-planet.png" alt="" />
+								</div>
+								<div class="textBox py-2">
+									<p class="paragraph my-1 featureTitle">Title</p>
+									<p class="paragraph featureText">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Maxime, quasi!
+									</p>
+								</div>
+							</div>
+							<div
+								class="col-5 rounded-1 d-flex align-items-center gap-4 px-3 feature"
+								id="feature1"
+							>
+								<div class="imgBox">
+									<img src="../resources/img/feature-planet.png" alt="" />
+								</div>
+								<div class="textBox py-2">
+									<p class="paragraph my-1 featureTitle">Title</p>
+
+									<p class="paragraph featureText">
+										Lorem ipsum dolor sit amet consectetur adipisicing elit.
+										Maxime, quasi!
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="container-fluid-md pt-5 pb-3 contact" id="contact">
+				<div class="container">
+					<div class="row justify-content-between">
+						<div class="col-lg-3 col-sm-0 d-flex flex-column">
+							<p class="paragraph title">Company</p>
+							<a href="#about">About</a>
+							<a href="#contact">Contact</a>
+						</div>
+						<div class="col-lg-3 col-sm-0 d-flex flex-column">
+							<p class="paragraph title">Rental</p>
+							<a href="#contact">Self-Drive</a>
+							<a href="#contact">Chauffeir-Driven</a>
+							<a href="#contact">Help</a>
+						</div>
+						<div class="col-lg-3 col-sm-12">
+							<p class="paragraph title">Stay Connected</p>
+							<a href="#insta"><i class="bi bi-instagram"></i></a>
+							<a href="#facebook"><i class="bi bi-facebook"></i></a>
+						</div>
+						<div class="col-lg-3 col-sm-0 d-flex flex-column">
+							<p class="paragraph title">Contact Us</p>
+							<a href="#about">4002-8922</a>
+							<a href="#contact">hello@company.com</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<footer class="container-fluid-sm py-2">
+				<p class="paragraph footerText text-center mb-1">
+					Projeto baseado no design do canal devSuperior
+				</p>
+				<p class="paragraph footerText text-center mb-0">
+					@DevSuperior 2021 - Use like you want
+				</p>
+			</footer>
+		</div>
+
+		<!-- Link Bootstrap Js -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

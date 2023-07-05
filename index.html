@@ -1,323 +1,440 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Guilherme Marcos Portfolio</title>
-		<!-- Links Bootstrap -->
-		<link
-			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-			rel="stylesheet"
-			integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-			crossorigin="anonymous"
-		/>
-		<link
-			rel="stylesheet"
-			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-		/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Guilherme Marcos Portfolio</title>
+    <!-- Links Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
 
-		<!-- Link css -->
-		<link rel="stylesheet" href="./css/style.css" />
-	</head>
-	<body>
-		<div class="collapsedNav" id="navbarCollapsed">
-			<button onclick="showNav()" class="btn btn-primary-outline closeBtn">
-				X
-			</button>
-			<ul class="nav-links">
-				<li class="nav-item">
-					<a onclick="showNav()" href="#home" data-text="HOME" id="home-link"
-						>HOME</a
-					>
-				</li>
-				<li class="nav-item">
-					<a onclick="showNav()" href="#about" data-text="ABOUT" id="about-link"
-						>ABOUT</a
-					>
-				</li>
-				<li class="nav-item">
-					<a
-						onclick="showNav()"
-						href="#skills"
-						data-text="SKILLS"
-						id="skills-link"
-						>SKILLS</a
-					>
-				</li>
-				<li class="nav-item">
-					<a
-						onclick="showNav()"
-						href="#portfolio"
-						data-text="PORTFOLIO"
-						id="portfolio-link"
-						>PORTFOLIO</a
-					>
-				</li>
-				<li class="nav-item">
-					<a href="#contact" data-text="CONTACT" id="contact-link">CONTACT</a>
-				</li>
-			</ul>
-		</div>
-		<div class="contentVisible" id="visibleContent">
-			<header class="header">
-				<nav id="navMain" class="navbar fixed-top px-5">
-					<a class="navbar-brand" href="#home"
-						><img class="imgBrand" src="img/Assinatura2.png" alt="logo"
-					/></a>
-					<button
-						class="navbar-toggler"
-						type="button"
-						data-toggle="collapse"
-						data-target="#navbarToggleExternalContent"
-						aria-controls="navbarToggleExternalContent"
-						aria-expanded="false"
-						aria-label="Toggle navigation"
-						onclick="showNav()"
-					>
-						<i class="navbarToggleIcon bi bi-list-nested"></i>
-					</button>
-				</nav>
-			</header>
+    <!-- Link css -->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <div class="collapsedNav" id="navbarCollapsed">
+      <button onclick="showNav()" class="btn btn-primary-outline closeBtn">
+        X
+      </button>
+      <ul class="nav-links">
+        <li class="nav-item">
+          <a onclick="showNav()" href="#home" data-text="HOME" id="home-link"
+            >HOME</a
+          >
+        </li>
+        <li class="nav-item">
+          <a onclick="showNav()" href="#about" data-text="ABOUT" id="about-link"
+            >ABOUT</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            onclick="showNav()"
+            href="#skills"
+            data-text="SKILLS"
+            id="skills-link"
+            >SKILLS</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            onclick="showNav()"
+            href="#portfolio"
+            data-text="PORTFOLIO"
+            id="portfolio-link"
+            >PORTFOLIO</a
+          >
+        </li>
+        <li class="nav-item">
+          <a href="#contact" data-text="CONTACT" id="contact-link">CONTACT</a>
+        </li>
+      </ul>
+    </div>
+    <div class="contentVisible" id="visibleContent">
+      <header class="header">
+        <nav id="navMain" class="navbar fixed-top px-5">
+          <a class="navbar-brand" href="#home"
+            ><img class="imgBrand" src="img/Assinatura2.png" alt="logo"
+          /></a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarToggleExternalContent"
+            aria-controls="navbarToggleExternalContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+            onclick="showNav()"
+          >
+            <i class="navbarToggleIcon bi bi-list-nested"></i>
+          </button>
+        </nav>
+      </header>
 
-			<div
-				class="container-fluid d-flex justify-content-between px-5 align-items-center mainContainer container0"
-				id="home"
-			>
-				<div
-					class="socialMediaIcons container d-flex flex-column align-items-start"
-				>
-					<a href="https://github.com/GuiMarcos" target="_blank"
-						><i class="bi bi-github"></i
-					></a>
-					<a
-						href="https://www.linkedin.com/in/guilherme-marcos-689b91165/"
-						target="_blank"
-						><i class="bi bi-linkedin"></i
-					></a>
-				</div>
-				<div class="centralText container">
-					<p class="myName text-center">
-						<span class="green">Guilherme</span> Marcos
-					</p>
-					<p class="myJob text-center">
-						I'm a <span class="glitch" data-text="Dev">Dev</span>
-					</p>
-				</div>
+      <div
+        class="container-fluid d-flex justify-content-between px-5 align-items-center mainContainer container0"
+        id="home"
+      >
+        <div
+          class="socialMediaIcons container d-flex flex-column align-items-start"
+        >
+          <a href="https://github.com/GuiMarcos" target="_blank"
+            ><i class="bi bi-github"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/guilherme-marcos-689b91165/"
+            target="_blank"
+            ><i class="bi bi-linkedin"></i
+          ></a>
+        </div>
+        <div class="centralText container w-100">
+          <p class="myName text-center">
+            <span class="green">Guilherme</span> Marcos
+          </p>
+          <p class="myJob text-center">
+            I'm a <span class="glitch" data-text="Dev">Dev</span>
+          </p>
+        </div>
 
-				<div class="main-image">
-					<img src="./img/myPic.png" alt="Gui Marcos (me)" />
-				</div>
+        <div class="main-image">
+          <img src="./img/myPic.png" alt="Gui Marcos (me)" />
+        </div>
 
-				<div
-					class="contactIcons container d-flex flex-column align-items-end justify-content-center"
-				>
-					<a href="" onclick="telephone()"><i class="bi bi-telephone"></i></a>
-					<a href="" onclick="email()"><i class="bi bi-envelope-at"></i></a>
-				</div>
+        <div
+          class="contactIcons container d-flex flex-column align-items-end justify-content-center"
+        >
+          <a href="" onclick="telephone()"><i class="bi bi-telephone"></i></a>
+          <a href="" onclick="email()"><i class="bi bi-envelope-at"></i></a>
+        </div>
 
-				<div id="animationParticle" class="animation-wrapper">
-					<div class="particle particle-1"></div>
-					<div class="particle particle-2"></div>
-					<div class="particle particle-3"></div>
-					<div class="particle particle-4"></div>
-				</div>
+        <div id="animationParticle" class="animation-wrapper">
+          <div class="particle particle-1"></div>
+          <div class="particle particle-2"></div>
+          <div class="particle particle-3"></div>
+          <div class="particle particle-4"></div>
+        </div>
 
-				<div class="arrow glow" id="arrow">
-					<a href="#about"><i class="bi bi-arrow-down-square"></i></a>
-				</div>
-			</div>
+        <div class="arrow glow" id="arrow">
+          <a href="#about"><i class="bi bi-arrow-down-square"></i></a>
+        </div>
+      </div>
 
-			<div
-				id="about"
-				class="mainContainer container-fluid container1 d-flex flex-column justify-content-center"
-			>
-				<div class="sectionTitle mx-auto">
-					<p class="text-center aboutTop h2">
-						About <span class="green">Me</span>
-					</p>
-					<div class="titleDetail"></div>
-				</div>
-				<div class="contentAbout container mx-auto mt-5 row">
-					<div class="imgBox my-auto col-lg-5 col-md-0">
-						<img
-							src="./img/profile-pic (1).png"
-							alt="Me Again"
-							class="img-fluid myPic"
-						/>
-					</div>
-					<div class="textBox col-lg-6 col-md-12">
-						<p class="myName h3">I am <span class="green">Guilherme</span></p>
-						<p class="myJob">
-							Working to become a <span class="green">Dev</span>
-						</p>
-						<p class="textAbout">
-							I am a student in Paraná, Brazil, and I am incredibly dedicated
-							and committed to my future career. Currently, I am pursuing my
-							studies to become a proficient Full-Stack Web Developer. I have
-							acquired certain skills necessary to build great websites, but I
-							am still acquiring others. In order to enhance my hard skills and
-							soft skills, I am seeking my first experience in the job market as
-							a junior or intern, so that I can work on awesome projects
-						</p>
-						<div class="topics">
-							<div class="row">
-								<p class="col">
-									<span class="green">Name: </span>Guilherme Marcos
-								</p>
-								<p class="col"><span class="green">Age: </span>21</p>
-							</div>
-							<div class="row">
-								<p class="col">
-									<span class="green">Phone: </span>+55(51)98240-0703
-								</p>
-								<p class="col">
-									<span class="green">Addres: </span>Rio Branco do Sul, PR, BR
-								</p>
-							</div>
-							<div class="row">
-								<p class="col">
-									<span class="green">Website: </span
-									><a target="_blank" href="https://guimarcos.github.io/"
-										>GuiMarcos.github.io</a
-									>
-								</p>
-								<p class="col">
-									<span class="green">E-mail: </span>guilherme.amarcos@gmail.com
-								</p>
-							</div>
-						</div>
-						<a
-							class="btn btn-outline-primary px-5 py-2 cvDownloadBtn"
-							type="button"
-							href="./cv/Currículo.pdf"
-							download="CV_Guilherme"
-						>
-							Download My CV
-						</a>
-					</div>
-				</div>
-			</div>
+      <div
+        id="about"
+        class="mainContainer container-fluid container1 d-flex flex-column justify-content-center"
+      >
+        <div class="sectionTitle mx-auto">
+          <p class="text-center aboutTop h2">
+            About <span class="green">Me</span>
+          </p>
+          <div class="titleDetail"></div>
+        </div>
+        <div class="contentAbout container mx-auto mt-5 row">
+          <div class="imgBox my-auto col-lg-5 col-md-12">
+            <img
+              src="./img/profile-pic (1).png"
+              alt="Me Again"
+              class="img-fluid myPic"
+            />
+          </div>
+          <div class="textBox col-lg-6 col-md-12">
+            <p class="myName h3">I am <span class="green">Guilherme</span></p>
+            <p class="myJob">
+              Working to become a <span class="green">Dev</span>
+            </p>
+            <p class="textAbout">
+              I am a student in Paraná, Brazil, and I am incredibly dedicated
+              and committed to my future career. Currently, I am pursuing my
+              studies to become a proficient Full-Stack Web Developer. I have
+              acquired certain skills necessary to build great websites, but I
+              am still acquiring others. In order to enhance my hard skills and
+              soft skills, I am seeking my first experience in the job market as
+              a junior or intern, so that I can work on awesome projects
+            </p>
+            <div class="topics">
+              <div class="row">
+                <p class="col">
+                  <span class="green">Name: </span>Guilherme Marcos
+                </p>
+                <p class="col"><span class="green">Age: </span>21</p>
+              </div>
+              <div class="row">
+                <p class="col">
+                  <span class="green">Phone: </span>+55(51)98240-0703
+                </p>
+                <p class="col">
+                  <span class="green">Addres: </span>Rio Branco do Sul, PR, BR
+                </p>
+              </div>
+              <div class="row">
+                <p class="col">
+                  <span class="green">Website: </span
+                  ><a target="_blank" href="https://guimarcos.github.io/"
+                    >guiMarcos.github.io</a
+                  >
+                </p>
+                <p class="col">
+                  <span class="green">E-mail: </span>guilherme.amarcos@gmail.com
+                </p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col text-center">
+                <a
+                  class="btn btn-outline-primary px-5 py-2 cvDownloadBtn"
+                  type="button"
+                  href="./cv/Currículo.pdf"
+                  download="CV_Guilherme"
+                >
+                  Download My CV
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-			<div
-				class="mainContainer container-fluid container2 d-flex flex-column justify-content-center align-items-center"
-				id="skills"
-			>
-				<div class="sectionTitle mx-auto my-5">
-					<p class="text-center skillsTop h2">
-						My <span class="green">Skills</span>
-					</p>
-					<div class="titleDetail"></div>
-				</div>
-				<div class="skills-content text-center">
-					<div class="row">
-						<div class="skill-html skill col-lg-6 col-sm-12">
-							<div class="skill-text">
-								<div class="html">HTML/CSS</div>
-							</div>
-							<div class="barCapac">
-								<div class="html-prog text-center barFlux">95%</div>
-							</div>
-						</div>
-						<div class="skill-js skill col-lg-6 col-sm-12">
-							<div class="skill-text">
-								<div class="js">JS</div>
-							</div>
-							<div class="barCapac">
-								<div class="js-prog text-center barFlux">65%</div>
-							</div>
-						</div>
-						<div class="skill-sass skill col-lg-6 col-sm-12">
-							<div class="skill-text">
-								<div class="sass">SASS</div>
-							</div>
-							<div class="barCapac">
-								<div class="sass-prog text-center barFlux">75%</div>
-							</div>
-						</div>
-						<div class="skill-bootstrap skill col-lg-6 col-sm-12">
-							<div class="skill-text">
-								<div class="bootstrap">Bootstrap</div>
-							</div>
-							<div class="barCapac">
-								<div class="bootstrap-prog text-center barFlux">75%</div>
-							</div>
-						</div>
-						<div class="skill-react skill col-lg-6 col-sm-12">
-							<div class="skill-text">
-								<div class="react">React</div>
-							</div>
-							<div class="barCapac">
-								<div class="react-prog text-center barFlux">5%</div>
-							</div>
-						</div>
-						<div class="skill-jQuery skill col-lg-6 col-sm-12 d-none">
-							<div class="skill-text">
-								<div class="jQuery">jQuery</div>
-							</div>
-							<div class="barCapac">
-								<div class="jQuery-prog text-center barFlux">5%</div>
-							</div>
-						</div>
-						<div class="skill-java skill col-lg-6 col-sm-12">
-							<div class="skill-text">
-								<div class="java">Java</div>
-							</div>
-							<div class="barCapac">
-								<div class="java-prog text-center barFlux">50%</div>
-							</div>
-						</div>
-						<div class="skill-poo skill col-lg-6 col-sm-12">
-							<div class="skill-text">
-								<div class="poo">OOP</div>
-							</div>
-							<div class="barCapac">
-								<div class="poo-prog text-center barFlux">55%</div>
-							</div>
-						</div>
-						<div class="skill-node skill col-lg-6 col-sm-12 d-none">
-							<div class="skill-text">
-								<div class="nodeJs">Node Js</div>
-							</div>
-							<div class="barCapac">
-								<div class="nodeJs-prog text-center barFlux">5%</div>
-							</div>
-						</div>
-						<div class="skill-git skill col-lg-6 col-sm-12">
-							<div class="skill-text">
-								<div class="git">Git/Github</div>
-							</div>
-							<div class="barCapac">
-								<div class="git-prog text-center barFlux">75%</div>
-							</div>
-						</div>
-						<div class="skill-typescript skill col-lg-6 col-sm-12 d-none">
-							<div class="skill-text">
-								<div class="typescript">Typescript</div>
-							</div>
-							<div class="barCapac">
-								<div class="typescript-prog text-center barFlux">5%</div>
-							</div>
-						</div>
-						<div class="skill-bulma skill col-lg-6 col-sm-12 d-none">
-							<div class="skill-text">
-								<div class="bulma">Bulma</div>
-							</div>
-							<div class="barCapac">
-								<div class="bulma-prog text-center barFlux">5%</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+      <div
+        class="mainContainer container-fluid container2 d-flex flex-column justify-content-center align-items-center"
+        id="skills"
+      >
+        <div class="sectionTitle mx-auto my-5">
+          <p class="text-center skillsTop h2">
+            My <span class="green">Skills</span>
+          </p>
+          <div class="titleDetail"></div>
+        </div>
+        <div class="skills-content text-center">
+          <div class="row">
+            <div class="skill-html skill col-lg-6 col-sm-12">
+              <div class="skill-text">
+                <div class="html">HTML/CSS</div>
+              </div>
+              <div class="barCapac">
+                <div class="html-prog text-center barFlux">95%</div>
+              </div>
+            </div>
+            <div class="skill-js skill col-lg-6 col-sm-12">
+              <div class="skill-text">
+                <div class="js">JS</div>
+              </div>
+              <div class="barCapac">
+                <div class="js-prog text-center barFlux">65%</div>
+              </div>
+            </div>
+            <div class="skill-sass skill col-lg-6 col-sm-12">
+              <div class="skill-text">
+                <div class="sass">SASS</div>
+              </div>
+              <div class="barCapac">
+                <div class="sass-prog text-center barFlux">75%</div>
+              </div>
+            </div>
+            <div class="skill-bootstrap skill col-lg-6 col-sm-12">
+              <div class="skill-text">
+                <div class="bootstrap">Bootstrap</div>
+              </div>
+              <div class="barCapac">
+                <div class="bootstrap-prog text-center barFlux">75%</div>
+              </div>
+            </div>
+            <div class="skill-react skill col-lg-6 col-sm-12 d-none">
+              <div class="skill-text">
+                <div class="react">React</div>
+              </div>
+              <div class="barCapac">
+                <div class="react-prog text-center barFlux">10%</div>
+              </div>
+            </div>
+            <div class="skill-jQuery skill col-lg-6 col-sm-12 d-none">
+              <div class="skill-text">
+                <div class="jQuery">jQuery</div>
+              </div>
+              <div class="barCapac">
+                <div class="jQuery-prog text-center barFlux">10%</div>
+              </div>
+            </div>
+            <div class="skill-java skill col-lg-6 col-sm-12">
+              <div class="skill-text">
+                <div class="java">Java</div>
+              </div>
+              <div class="barCapac">
+                <div class="java-prog text-center barFlux">50%</div>
+              </div>
+            </div>
+            <div class="skill-poo skill col-lg-6 col-sm-12">
+              <div class="skill-text">
+                <div class="poo">OOP</div>
+              </div>
+              <div class="barCapac">
+                <div class="poo-prog text-center barFlux">55%</div>
+              </div>
+            </div>
+            <div class="skill-node skill col-lg-6 col-sm-12 d-none">
+              <div class="skill-text">
+                <div class="nodeJs">Node Js</div>
+              </div>
+              <div class="barCapac">
+                <div class="nodeJs-prog text-center barFlux">5%</div>
+              </div>
+            </div>
+            <div class="skill-git skill col-lg-6 col-sm-12">
+              <div class="skill-text">
+                <div class="git">Git/Github</div>
+              </div>
+              <div class="barCapac">
+                <div class="git-prog text-center barFlux">75%</div>
+              </div>
+            </div>
+            <div class="skill-typescript skill col-lg-6 col-sm-12 d-none">
+              <div class="skill-text">
+                <div class="typescript">Typescript</div>
+              </div>
+              <div class="barCapac">
+                <div class="typescript-prog text-center barFlux">10%</div>
+              </div>
+            </div>
+            <div class="skill-bulma skill col-lg-6 col-sm-12 d-none">
+              <div class="skill-text">
+                <div class="bulma">Bulma</div>
+              </div>
+              <div class="barCapac">
+                <div class="bulma-prog text-center barFlux">10%</div>
+              </div>
+            </div>
+            <div class="skill-c skill col-lg-6 col-sm-12">
+              <div class="skill-text">
+                <div class="c">C</div>
+              </div>
+              <div class="barCapac">
+                <div class="c-prog text-center barFlux">50%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
 
-		<script src="js/basic.js"></script>
+      <div
+        class="mainContainer container-fluid container3 d-flex flex-column justify-content-center align-items-center"
+        id="portfolio"
+      >
+        <div class="sectionTitle mx-auto my-5">
+          <p class="text-center portfolioTop h2">
+            My <span class="green">Projects</span>
+          </p>
+          <div class="titleDetail"></div>
+        </div>
+        <div class="projectsGrid grid row mx-5 my-2 w-75 tex">
+          <div class="project my-3 col-xxl-4 col-lg-6 col-md-12" id="carSales">
+            <div class="card d-flex flex-column">
+              <div class="cardImg p-2">
+                <img
+                  class="img"
+                  src="./img/carSalesProj.png"
+                  alt="carSalesProjec"
+                />
+              </div>
+              <div
+                class="card-body pb-2 d-flex flex-column justify-content-between"
+              >
+                <h5 class="card-title">Car Sales Project</h5>
+                <p class="card-text">
+                  This project was used to evolve my knowledge in Css with sass
+                  and know better about some elements manipulation
+                </p>
+                <div class="seeMore d-flex justify-content-between">
+                  <a
+                    href="../otherPages/projCarSales/html/index.html"
+                    target="_blank"
+                    class="btn btn-success btnSee"
+                    >Veja Mais</a
+                  >
+                  <p class="font-weight-light">Sass/Bootstrap/CSS3/HTML5</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project my-3 col-xxl-4 col-lg-6 col-md-12" id="starbucks">
+            <div class="card d-flex flex-column">
+              <div class="cardImg p-2">
+                <img
+                  class="img"
+                  src="./img/StarbucksProj.png"
+                  alt="StarbucksProj"
+                />
+              </div>
+              <div
+                class="card-body pb-2 d-flex flex-column justify-content-between"
+              >
+                <h5 class="card-title">StarBucks Project</h5>
+                <p class="card-text">
+                  This project was used to evolve my knowledge in Css with sass
+                  and know better about some elements manipulation
+                </p>
+                <div class="seeMore d-flex justify-content-between">
+                  <a
+                    href="../otherPages/projStarbucks/html/index.html"
+                    target="_blank"
+                    class="btn btn-success btnSee"
+                    >Veja Mais</a
+                  >
+                  <p class="font-weight-light">Sass/Bootstrap/CSS3/HTML5</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project my-3 col-xxl-4 col-lg-6 col-md-12" id="spaceX">
+            <div class="card d-flex flex-column">
+              <div class="cardImg p-2">
+                <img class="img" src="./img/SpaceXProj.png" alt="SpaceXProj" />
+              </div>
+              <div
+                class="card-body pb-2 d-flex flex-column justify-content-between"
+              >
+                <h5 class="card-title">SpaceX Project</h5>
+                <p class="card-text">
+                  This project was used to learn how to use libraries,
+                  transitions, containers, etc
+                </p>
+                <div class="seeMore d-flex justify-content-between">
+                  <a
+                    href="../otherPages/projSpaceX/html/index.html"
+                    target="_blank"
+                    class="btn btn-success btnSee"
+                    >Veja Mais</a
+                  >
+                  <p class="font-weight-light">Sass/Bootstrap/CSS3/HTML5</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project my-4 col-12" id="moreProj">
+            <a
+              href="https://github.com/GuiMarcos"
+              target="_blank"
+              class="btn btn-outline-success btnRep"
+              >Repositório de Projetos</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
 
-		<!-- Script Bootstrap -->
-		<script
-			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-			integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-			crossorigin="anonymous"
-		></script>
-	</body>
+    <script src="js/basic.js"></script>
+
+    <!-- Script Bootstrap -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
