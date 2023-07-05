@@ -1,0 +1,274 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,900;1,300;1,400;1,500;1,600;1,700&display=swap");
+* {
+  color: #fff;
+}
+
+body {
+  background-color: #000000;
+}
+
+.btn {
+  padding: 15px 35px;
+  border: 2px solid white;
+  text-transform: uppercase;
+}
+
+.mainContainer {
+  min-height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.mainContainer.container1 {
+  background-image: url("../resources/img/home/01.jpg");
+}
+.mainContainer.container2 {
+  background-image: url("../resources/img/home/02.jpg");
+}
+.mainContainer.container3 {
+  background-image: url("../resources/img/home/03.gif");
+}
+.mainContainer.container4 {
+  background-image: url("../resources/img/home/04.jpg");
+}
+
+.header {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: bold;
+}
+.header :hover {
+  color: #b9b9b9;
+}
+
+.navBarLogo {
+  width: 240px;
+  margin-left: -0.75rem;
+}
+
+.text-box {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.text-box .h1 {
+  font-size: 60px;
+}
+
+.titlePadding {
+  padding-top: 12.5rem;
+}
+
+.shortTitle {
+  width: 550px;
+}
+
+.arrowDown {
+  width: 90px;
+  margin-top: 5px;
+}
+
+.footer .copyOBC {
+  font-size: 12px;
+  color: #555252;
+  padding: 5px;
+}
+
+@media (max-width: 595px) {
+  .shortTitle {
+    width: 300px;
+  }
+}
+@media (max-width: 480px) {
+  .text-box .h1 {
+    font-size: 40px;
+  }
+  .titlePadding {
+    padding-top: 20rem;
+  }
+}
+@media (max-width: 385px) {
+  .navBarLogo {
+    width: 150px;
+  }
+}
+.mainContainer.container5 {
+  background-image: url("../resources/img/falcon9/01.jpg");
+}
+.mainContainer.container6 {
+  background-image: url("../resources/img/falcon9/02.jpg");
+}
+.mainContainer .container8 {
+  background-image: url("../resources/img/falcon9/08.jpg");
+}
+
+.titleBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: 80vh;
+  text-transform: uppercase;
+}
+
+.titleBox .titleFalcon9 {
+  font-size: 90px;
+  font-family: "Rubik", sans-serif;
+  font-weight: 500;
+}
+
+.numberTitle {
+  font-size: 90px;
+}
+
+.numberSubtitle {
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.containerDesc {
+  display: flex;
+  height: 90vh;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.falcon9Desc {
+  font-size: 22px;
+  width: 640px;
+  line-height: 50px;
+}
+
+.overview {
+  width: 500px;
+  margin-left: 13%;
+  padding-top: 15%;
+}
+
+#carouselDesc .carousel1 {
+  background-image: url(../resources/img/falcon9/03.jpg);
+}
+
+#carouselDesc .carousel2 {
+  background-image: url(../resources/img/falcon9/04.jpg);
+}
+
+#carouselDesc .carousel3 {
+  background-image: url(../resources/img/falcon9/05.jpg);
+}
+
+#carouselDesc .carousel4 {
+  background-image: url(../resources/img/falcon9/06.jpg);
+}
+
+#carouselDesc .carousel5 {
+  background-image: url(../resources/img/falcon9/07.jpg);
+}
+
+#carouselRocket img {
+  height: 100vh;
+}
+
+.btnUserInfo {
+  padding: 15px 20px;
+}
+
+.textColor2 {
+  color: #b9b9b9;
+}
+
+.table td {
+  background-color: transparent;
+  color: white;
+}
+
+@media (max-width: 770px) {
+  .falcon9Desc {
+    width: auto;
+    line-height: auto;
+  }
+  .overview {
+    width: auto;
+    padding-top: 50%;
+  }
+  .numberTitle {
+    font-size: 60px;
+  }
+  .numberSubtitle {
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+}
+.mainContainer.container10 {
+  background-image: url(../resources/img/humanFlight/01.jpg);
+}
+.mainContainer.container12 {
+  background-image: url(../resources/img/humanFlight/02.jpg);
+}
+.mainContainer.container13 {
+  background-image: url(../resources/img/humanFlight/03.jpg);
+}
+.mainContainer.container14 {
+  background-image: url(../resources/img/humanFlight/04.jpg);
+}
+.mainContainer.container15 {
+  background-image: url(../resources/img/humanFlight/05.jpg);
+}
+
+.container10 .titleBox .titleHuman {
+  font-size: 120px;
+  font-weight: 500;
+}
+
+.container10 .titleBox .subtitleHuman {
+  font-weight: lighter;
+}
+
+.container11 {
+  max-width: 800px;
+  height: 30vh;
+}
+
+.container11 .smallText {
+  color: #b9b9b9;
+  font-weight: 400;
+}
+
+.container13 .textBox {
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+}
+
+.textBox .h1 {
+  font-weight: bold;
+  font-size: 60px;
+}
+
+.textBox .h6 {
+  font-weight: lighter;
+}
+
+.titlePadding2 {
+  padding-top: 18rem;
+}
+
+.btnExp {
+  padding: 15px 50px;
+}
+
+@media (max-width: 500px) {
+  .container10 .titleBox .titleHuman {
+    font-size: 90px;
+  }
+  .textBox {
+    margin: 0 !important;
+  }
+}
+@media (max-width: 370px) {
+  .container10 .titleBox .titleHuman {
+    font-size: 60px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
