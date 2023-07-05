@@ -146,7 +146,6 @@ a {
       opacity: 80%;
     }
   }
-
   a i {
     font-size: 2rem;
     transition: 0.3s;
@@ -155,7 +154,11 @@ a {
       font-size: 2.5rem;
     }
   }
-
+  .contactIcons {
+    a i {
+      font-size: 1.6rem;
+    }
+  }
   .centralText {
     .myName {
       font-family: "Poppins", sans-serif;
@@ -176,11 +179,12 @@ a {
     position: absolute;
     background-size: cover;
     background-position: center;
-    width: 40%;
+    width: 35%;
     right: 0%;
     z-index: -1;
 
     img {
+      opacity: 80%;
       height: 100vh;
       width: auto;
       float: right;
