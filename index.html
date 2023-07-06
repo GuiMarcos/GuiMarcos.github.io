@@ -113,7 +113,7 @@
         >
           <a href="tel://5551982400703"><i class="bi bi-telephone"></i></a>
           <a
-            href="https://whatsapp.com/send/?phone=5551982400703&text=I+have+a+Job+for+you%21&type=phone_number&app_absent=0"
+            href="https://api.whatsapp.com/send?phone=5551982400703&text=I%20have%20a%20Job%20for%20You!!!"
             target="_blank"
             ><i class="bi bi-whatsapp"></i
           ></a>
@@ -401,6 +401,92 @@
               >Repositório de Projetos</a
             >
           </div>
+        </div>
+      </div>
+
+      <div
+        class="mainContainer container-fluid container4 d-flex flex-column justify-content-center align-items-center"
+        id="contact"
+      >
+        <div class="sectionTitle mx-auto my-5">
+          <p class="text-center contactTop h2">
+            Contact <span class="green">Me</span>
+          </p>
+          <div class="titleDetail"></div>
+        </div>
+        <div class="contact-form d-flex flex-column align-items-center">
+          <div class="form-header">Message Me</div>
+          <form
+            id="myForm"
+            class="d-flex flex-column gap-3"
+            action="./php/mail.php"
+            method="POST"
+          >
+            <div class="input-line row d-flex justify-content-center">
+              <div class="col-12 row">
+                <div class="col-1 text-center">
+                  <i class="bi bi-person"></i>
+                </div>
+                <div class="col-sm-12 col-md-11 d-flex align-items-center">
+                  <input
+                    id="name"
+                    type="text"
+                    placeholder="Name"
+                    class="input-name"
+                  />
+                </div>
+              </div>
+              <div class="col-12 row">
+                <div class="col-1 text-center">
+                  <i class="bi bi-at"></i>
+                </div>
+                <div class="col-sm-12 col-md-11 d-flex align-items-center">
+                  <input
+                    id="email"
+                    type="email"
+                    placeholder="Email"
+                    class="input-email"
+                  />
+                </div>
+              </div>
+              <div class="col-12 row">
+                <div class="col-1 text-center">
+                  <i class="bi bi-envelope-exclamation-fill"></i>
+                </div>
+                <div class="col-sm-12 col-md-11 d-flex align-items-center">
+                  <input
+                    type="text"
+                    id="subject"
+                    placeholder="Subject"
+                    class="input-subject"
+                  />
+                </div>
+              </div>
+              <div class="col-12 row">
+                <div class="col-1 text-center">
+                  <i class="bi bi-chat-right-text"></i>
+                </div>
+                <div class="col-sm-12 col-md-11 d-flex align-items-center">
+                  <textarea
+                    id="body"
+                    class="input-text"
+                    placeholder="I have a job for you!!!"
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+            <div class="d-flex justify-content-center">
+              <button
+                type="button"
+                id="submit"
+                onclick="sendEmail()"
+                class="btn btn-success w-50"
+                value="send"
+              >
+                Submit
+              </button>
+            </div>
+          </form>
         </div>
       </div>
     </div>
