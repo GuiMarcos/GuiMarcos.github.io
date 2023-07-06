@@ -31,28 +31,13 @@ function isElementVisible(element) {
 }
 
 function sendEmail() {
-  var name = document.getElementById("name").value;
-  var email = document.getElementById("email").value;
-  var subject = document.getElementById("subject").value;
-  var body = document.getElementById("body").value;
-
-  // Realiza alguma validação dos campos, se necessário
-
-  // Cria um objeto FormData com os valores do formulário
-  var formData = new FormData();
-  formData.append("name", name);
-  formData.append("email", email);
-  formData.append("subject", subject);
-  formData.append("body", body);
-
-  // Envia uma requisição AJAX para o arquivo mail.php
-  var xhr = new XMLHttpRequest();
-  xhr.open("POST", "./php/mail.php", true);
-  xhr.onreadystatechange = function () {
-    if (xhr.readyState === 4 && xhr.status === 200) {
-      alert(xhr.responseText);
-      // Aqui você pode realizar ações adicionais após o envio do email
-    }
-  };
-  xhr.send(formData);
+  const form = document.getElementById("myForm");
+  form.addEventListener("submit", () => {
+    const div = document.getElementById("statusEmail");
+    div.style.display = "block";
+    document.getElementById("name").value = "";
+    document.getElementById("email").value = "";
+    document.getElementById("subject").value = "";
+    document.getElementById("message").value = "";
+  });
 }

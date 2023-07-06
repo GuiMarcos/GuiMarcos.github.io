@@ -96,7 +96,7 @@ a {
     top: 10%;
     color: $gray;
     font-size: 2rem;
-    font-family: cursive;
+    font-family: "Signika", sans-serif;
     border: none;
     &:hover {
       color: $bg-light;
@@ -342,6 +342,12 @@ a {
           font-size: 2rem;
         }
       }
+    }
+    #statusEmail {
+      font-family: "Teko", sans-serif;
+      margin-top: 5px;
+      font-size: 1.5rem;
+      display: none;
     }
   }
 }
