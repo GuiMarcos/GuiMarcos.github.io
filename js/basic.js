@@ -35,9 +35,8 @@ function sendEmail() {
   form.addEventListener("submit", () => {
     const div = document.getElementById("statusEmail");
     div.style.display = "block";
-    document.getElementById("name").value = "";
-    document.getElementById("email").value = "";
-    document.getElementById("subject").value = "";
-    document.getElementById("message").value = "";
+    setTimeout(() => {
+      form.reset();
+    }, 500); // Tempo em milissegundos antes de limpar os inputs (1 segund
   });
 }
