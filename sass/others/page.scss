@@ -23,6 +23,65 @@ a {
       filter: invert(100%);
     }
   }
+
+  .btnChooseLanguage {
+    font-size: 2rem;
+    color: $gray;
+    transition: 0.3s;
+    &:hover {
+      color: $bg-light;
+    }
+    &:active {
+      border: none;
+    }
+  }
+
+  .chooseLanguage {
+    display: none;
+    gap: 10px;
+    background-color: $bg-dark;
+    padding: 20px;
+    .btnPT,
+    .btnEN {
+      background-color: transparent;
+      border: 2px solid $dark-gray;
+      border-radius: 5px;
+      color: $bg-light;
+      width: 75px;
+      font-family: "Teko", sans-serif;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      justify-content: center;
+      transition: 0.3s;
+    }
+    .btnPT:hover {
+      color: transparent;
+      img {
+        display: none;
+      }
+      background-image: url("../img/brFlag.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 115% 200%;
+    }
+    .btnEN:hover {
+      color: transparent;
+      img {
+        display: none;
+      }
+      background-image: url("../img/ukFlag.png");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 110% 200%;
+    }
+
+    img {
+      width: 1rem;
+      height: auto;
+    }
+  }
+
   .navbarToggleIcon {
     color: $gray;
     font-size: 3rem;
@@ -297,7 +356,8 @@ a {
         }
       }
     }
-    .btnRep {
+    .btnRep,
+    .btnSeeMore {
       background-color: $bg-light;
       color: $secondary-color;
       height: 50px;

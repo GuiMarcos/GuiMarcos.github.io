@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guilherme Marcos Portfolio</title>
+
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- Links Bootstrap -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -58,12 +61,30 @@
         </li>
       </ul>
     </div>
+
     <div class="contentVisible" id="visibleContent">
       <header class="header">
         <nav id="navMain" class="navbar fixed-top px-5">
           <a class="navbar-brand" href="#home"
             ><img class="imgBrand" src="img/Assinatura2.png" alt="logo"
           /></a>
+          <button
+            type="button"
+            onclick="showLanguages()"
+            class="btnChooseLanguage btn"
+          >
+            <i class="bi bi-globe2"></i>
+          </button>
+          <div class="chooseLanguage justify-content-center align-items-center">
+            <button type="button" onclick="translateSite('pt')" class="btnPT">
+              <img src="./img/brFlag.png" alt="BR Flag" />
+              PT-BR
+            </button>
+            <button type="button" onclick="translateSite('en') " class="btnEN">
+              <img src="./img/ukFlag.png" alt="UK Flag" />
+              EN
+            </button>
+          </div>
           <button
             class="navbar-toggler"
             type="button"
@@ -161,27 +182,30 @@
               Working to become a <span class="green">Dev</span>
             </p>
             <p class="textAbout">
-              I am a student in Paraná, Brazil, and I am incredibly dedicated
-              and committed to my future career. Currently, I am pursuing my
-              studies to become a proficient Full-Stack Web Developer. I have
-              acquired certain skills necessary to build great websites, but I
-              am still acquiring others. In order to enhance my hard skills and
-              soft skills, I am seeking my first experience in the job market as
-              a junior or intern, so that I can work on awesome projects
+              I am pursuing my studies to become a proficient Full-Stack Web
+              Developer, and I am deeply dedicated and committed to my future
+              career. I have already acquired certain skills necessary for
+              building great websites, but I am constantly striving to acquire
+              new ones. In order to further enhance both my hard and soft
+              skills, I am actively seeking my first experience in the job
+              market as a junior or intern. This will provide me with valuable
+              opportunities to work on exciting and challenging projects.
             </p>
             <div class="topics">
               <div class="row">
                 <p class="col">
-                  <span class="green">Name: </span>Guilherme Marcos
+                  <span class="nameTopics green">Name: </span>Guilherme Marcos
                 </p>
-                <p class="col"><span class="green">Age: </span>21</p>
+                <p class="col"><span class="ageTopics green">Age: </span>21</p>
               </div>
               <div class="row">
                 <p class="col">
-                  <span class="green">Phone: </span>+55(51)98240-0703
+                  <span class="green phoneTopics">Phone: </span
+                  >+55(51)98240-0703
                 </p>
                 <p class="col">
-                  <span class="green">Addres: </span>Rio Branco do Sul, PR, BR
+                  <span class="addressTopics green">Address: </span>Rio Branco
+                  do Sul, PR, BR
                 </p>
               </div>
               <div class="row">
@@ -216,13 +240,22 @@
         class="mainContainer container-fluid container2 d-flex flex-column justify-content-center align-items-center"
         id="skills"
       >
-        <div class="sectionTitle mx-auto my-5">
+        <div
+          data-aos="fade-up"
+          data-aos-duration="3000"
+          class="sectionTitle mx-auto my-5"
+          data-aos="fade-up"
+        >
           <p class="text-center skillsTop h2">
             My <span class="green">Skills</span>
           </p>
           <div class="titleDetail"></div>
         </div>
-        <div class="skills-content text-center">
+        <div
+          class="skills-content text-center"
+          data-aos="fade-up"
+          data-aos-duration="3000"
+        >
           <div class="row">
             <div class="skill-html skill col-lg-6 col-sm-12">
               <div class="skill-text barCapac">
@@ -316,17 +349,18 @@
               <div
                 class="card-body pb-2 d-flex flex-column justify-content-between"
               >
-                <h5 class="card-title">Car Sales Project</h5>
-                <p class="card-text">
-                  This project was used to evolve my knowledge in Css with sass
-                  and know better about some elements manipulation
+                <h5 class="card-title titleCard1">Car Sales Project</h5>
+                <p class="card-text textCard1">
+                  This project simulates a car selling website. It has been
+                  refactored using Bootstrap and Sass, while the original
+                  project was built with pure HTML and CSS.
                 </p>
                 <div class="seeMore d-flex justify-content-between">
                   <a
                     href="../otherPages/projCarSales/html/index.html"
                     target="_blank"
                     class="btn btn-success btnSee"
-                    >Veja Mais</a
+                    >See More</a
                   >
                   <p class="font-weight-light tecs">
                     Sass/Bootstrap/CSS3/HTML5
@@ -347,17 +381,19 @@
               <div
                 class="card-body pb-2 d-flex flex-column justify-content-between"
               >
-                <h5 class="card-title">StarBucks Project</h5>
-                <p class="card-text">
-                  This project was used to evolve my knowledge in Css with sass
-                  and know better about some elements manipulation
+                <h5 class="card-title titleCard2">StarBucks Project</h5>
+                <p class="card-text textCard2">
+                  This project is a simple idea of a landing page for the
+                  company Starbucks. It has been refactored using Bootstrap and
+                  Sass, while the original project was built with pure HTML and
+                  CSS.
                 </p>
                 <div class="seeMore d-flex justify-content-between">
                   <a
                     href="../otherPages/projStarbucks/html/index.html"
                     target="_blank"
                     class="btn btn-success btnSee"
-                    >Veja Mais</a
+                    >See More</a
                   >
                   <p class="font-weight-light tecs">
                     Sass/Bootstrap/CSS3/HTML5
@@ -374,8 +410,8 @@
               <div
                 class="card-body pb-2 d-flex flex-column justify-content-between"
               >
-                <h5 class="card-title">SpaceX Project</h5>
-                <p class="card-text">
+                <h5 class="card-title titleCard3">SpaceX Project</h5>
+                <p class="card-text textCard3">
                   This project was used to learn how to use libraries,
                   transitions, containers, etc
                 </p>
@@ -384,7 +420,7 @@
                     href="../otherPages/projSpaceX/html/index.html"
                     target="_blank"
                     class="btn btn-success btnSee"
-                    >Veja Mais</a
+                    >See More</a
                   >
                   <p class="font-weight-light tecs">
                     Sass/Bootstrap/CSS3/HTML5
@@ -395,27 +431,29 @@
           </div>
           <div class="project my-4 col-12" id="moreProj">
             <a
-              href="https://github.com/GuiMarcos"
+              href="https://github.com/GuiMarcos?tab=repositories"
               target="_blank"
               class="btn btn-outline-success btnRep"
-              >Repositório de Projetos</a
+              >View Source Codes</a
+            >
+            <a
+              href="./otherPages/projects.html"
+              target="_blank"
+              class="btn btn-outline-success btnSeeMore d-none"
+              >More Projects</a
             >
           </div>
         </div>
       </div>
 
       <div
-        class="mainContainer container-fluid container4 d-flex flex-column justify-content-center align-items-center"
+        class="mainContainer container-fluid container4 d-flex flex-column justify-content-center align-items-center pb-3"
         id="contact"
       >
-        <div class="sectionTitle mx-auto my-5">
-          <p class="text-center contactTop h2">
-            Contact <span class="green">Me</span>
-          </p>
-          <div class="titleDetail"></div>
-        </div>
         <div class="contact-form d-flex flex-column align-items-center">
-          <div class="form-header">Message Me</div>
+          <div class="form-header contactTop">
+            Message <span class="green">Me</span>
+          </div>
           <form
             id="myForm"
             class="d-flex flex-column gap-3"
@@ -508,13 +546,16 @@
             />
           </form>
           <div id="statusEmail">
-            <p>Thank for contact me, I'll get in touch soon!!!</p>
+            <p class="contactThanks">
+              Thank you for contacting me, I'll get in touch soon!
+            </p>
           </div>
         </div>
       </div>
     </div>
 
     <script src="js/basic.js"></script>
+    <script src="js/translate.js"></script>
 
     <!-- Script Bootstrap -->
     <script
@@ -522,5 +563,11 @@
       integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
       crossorigin="anonymous"
     ></script>
+
+    <!-- Link Animation Text Js -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>

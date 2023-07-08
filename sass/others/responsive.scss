@@ -101,6 +101,19 @@
   }
 }
 
+@media (max-width: 500px) {
+  .navbar {
+    width: 100vw;
+    background-color: $bg-dark;
+    .imgBrand {
+      width: 4rem;
+    }
+    .navbarToggleIcon {
+      font-size: 2rem;
+    }
+  }
+}
+
 @media (max-width: 380px) {
   .collapsedNav {
     .nav-links {

@@ -1,33 +1,31 @@
+let navOpen = 0;
+let scrollPosition = 0;
+let time = 0;
 function showNav() {
+  if (!navOpen) {
+    scrollPosition =
+      window.scrollY ||
+      document.documentElement.scrollTop ||
+      document.body.scrollTop;
+    console.log(scrollPosition);
+    if (scrollPosition > 1800) {
+      time = 1500;
+    } else {
+      time = 500;
+    }
+  }
   if (navbarCollapsed.style.display == "flex") {
     navbarCollapsed.style.display = "none";
     visibleContent.style.display = "block";
-    document.querySelector(".is-active").scrollIntoView({
-      behavior: "smooth",
-    });
+    scrollToSmoothly(scrollPosition, time);
+    navOpen = 0;
   } else {
-    isElementVisible(document.getElementById("home"));
-    isElementVisible(document.getElementById("about"));
-    isElementVisible(skills);
-    //isElementVisible(portfolio);
-    //isElementVisible(contact);
     navbarCollapsed.style.display = "flex";
     visibleContent.style.display = "none";
+    document.querySelector(".chooseLanguage").style.display = "none";
+    document.querySelector(".btnChooseLanguage").style.display = "block";
+    navOpen = 1;
   }
-}
-
-function isElementVisible(element) {
-  const rect = element.getBoundingClientRect();
-  if (
-    rect.top >= 0 &&
-    rect.left >= 0 &&
-    rect.bottom <=
-      (window.innerHeight || document.documentElement.clientHeight) &&
-    rect.right <= (window.innerWidth || document.documentElement.clientWidth)
-  )
-    element.classList.add("is-active");
-  else element.classList.remove("is-active");
-  return;
 }
 
 function sendEmail() {
@@ -38,5 +36,42 @@ function sendEmail() {
     setTimeout(() => {
       form.reset();
     }, 500); // Tempo em milissegundos antes de limpar os inputs (1 segund
+  });
+}
+
+function showLanguages() {
+  const divLanguages = document.querySelector(".chooseLanguage");
+  const btnLang = document.querySelector(".btnChooseLanguage");
+  if (divLanguages.style.display == "flex") {
+    divLanguages.style.display = "none";
+    btnLang.style.display = "block";
+  } else {
+    divLanguages.style.display = "flex";
+    btnLang.style.display = "none";
+  }
+}
+
+/*
+   @param time: the exact amount of time the scrolling will take (in milliseconds)
+   @param pos: the y-position to scroll to (in pixels)
+*/
+function scrollToSmoothly(pos, time) {
+  var currentPos = window.scrollY;
+  var start = null;
+  if (time == null) time = 500;
+  (pos = +pos), (time = +time);
+  window.requestAnimationFrame(function step(currentTime) {
+    start = !start ? currentTime : start;
+    var progress = currentTime - start;
+    if (currentPos < pos) {
+      window.scrollTo(0, ((pos - currentPos) * progress) / time + currentPos);
+    } else {
+      window.scrollTo(0, currentPos - ((currentPos - pos) * progress) / time);
+    }
+    if (progress < time) {
+      window.requestAnimationFrame(step);
+    } else {
+      window.scrollTo(0, pos);
+    }
   });
 }
