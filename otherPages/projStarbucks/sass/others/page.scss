@@ -1,109 +1,126 @@
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-	color: black;
-	background-color: $warm-neutral;
-
-	overflow: hidden; /* Hide scrollbars */
+  color: black;
+  background-color: $warm-neutral;
 }
 
-header .navbar .nav-link {
-	color: black;
-	font-size: large;
+.navbar .nav-link {
+  color: black;
+  font-size: large;
 }
 
-header .navbar .dropdown-menu {
-	background-color: $green;
+.navbar .dropdown-menu {
+  background-color: $green;
 }
 
-header .navbar .dropdown-divider {
-	background-color: white;
+.navbar .dropdown-divider {
+  background-color: white;
 }
 
-header .navbar .dropdown-item {
-	color: white;
-	transition: 0.3s;
+.navbar .dropdown-item {
+  color: white;
+  transition: 0.3s;
 
-	&:hover {
-		background-color: $light-green;
-		color: $green;
-	}
+  &:hover {
+    background-color: $light-green;
+    color: $green;
+  }
 }
 
 header .navbar .btnLearnMore {
-	background-color: $green;
-	transition: 0.3s;
-	&:hover {
-		background-color: $accend-green;
-	}
+  background-color: $green;
+  transition: 0.3s;
+  &:hover {
+    background-color: $accend-green;
+  }
 }
 
-.mainContent .centerContent .textBox {
-	width: 600px;
+.allContent {
+  height: 100vh;
+  justify-content: space-between;
 }
 
-.mainContent .centerContent .textBox .brand {
-	font-weight: 500;
-	font-size: 4.5em;
-	line-height: 1.4em;
-	color: $aux-black;
+.mainContent {
+  padding: 0 2.5rem;
 }
 
-.mainContent .centerContent .textBox .brand span {
-	color: $green;
-	font-size: 1.2em;
-	font-weight: 900;
+.mainContent .textBox .paragraph {
+  text-align: justify;
 }
 
-.mainContent .centerContent .imgBox {
-	width: 600px;
-	padding-right: 5rem;
+.mainContent .textBox .brand {
+  font-weight: 500;
+  font-size: 4.5em;
+  line-height: 1.4em;
+  color: $aux-black;
 }
 
-.mainContent .centerContent .imgBox img {
-	width: 340px;
+.mainContent .textBox .brand span {
+  color: $green;
+  font-size: 1.2em;
+  font-weight: 900;
 }
 
-.mainContent .socialBox {
-	position: absolute;
-	top: 40%;
-	right: 30px;
+.mainContent .imgBox {
+  justify-content: end;
+  padding-top: 10px;
 }
 
-.mainContent .socialBox .bi {
-	font-size: 33px;
-	color: $light-green;
-	cursor: pointer;
-	transition: 0.4s;
-
-	&:hover {
-		transform: translateX(-15px);
-	}
+.mainContent .imgBox img {
+  width: 340px;
 }
 
-.mainContent .circle {
-	width: 100%;
-	height: 100vh;
-	background-color: $green;
-	position: absolute;
-	top: 0;
-	left: 0;
-	clip-path: circle(600px at right 950px);
-	z-index: -1;
+.socialBox {
+  position: absolute;
+  top: 40vh;
+  right: 30px;
+}
+
+.socialBox .bi {
+  font-size: 33px;
+  color: $light-green;
+  cursor: pointer;
+  transition: 0.4s;
+
+  &:hover {
+    transform: translateX(-15px);
+  }
+}
+
+.circle {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  clip-path: circle(600px at right 950px);
+  z-index: -1;
 }
 
 footer .thumb .items {
-	cursor: pointer;
-	transition: 0.5s;
+  cursor: pointer;
+  transition: 0.5s;
 
-	&:hover {
-		transform: translateY(-15px);
-	}
+  &:hover {
+    transform: translateY(-15px);
+  }
 }
 
 footer .thumb .items img {
-	width: 80px;
+  width: 80px;
+}
+
+.green {
+  background-color: $green;
+}
+
+.pink {
+  background-color: $pink;
+}
+.purple {
+  background-color: $purple;
 }

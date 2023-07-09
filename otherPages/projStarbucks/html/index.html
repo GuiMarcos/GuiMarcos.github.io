@@ -22,14 +22,17 @@
 		<title>Starbucks</title>
 	</head>
 
-	<body class="mx-3">
-    <div class="container-fluid d-flex flex-column">
-      <header class="mt-3">
-        <nav class="navbar navbar-expand-lg">
+	<body onload="changeCircleColor('green')">
+    <div class="container-fluid d-flex flex-column allContent">
+      <header class="pt-3">
+        <nav class="navbar navbar-expand-md">
           <div class="container-fluid px-5">
             <a href="#"><img src="../resources/img/logo.png" alt="logo" class="img-fluid nav-brand" /></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse " id="navbarSupportedContent">
-              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <ul class="navbar-nav ms-auto">
                 <li class="nav-item mx-3">
                   <a class="nav-link active" aria-current="page" href="#">Home</a>
                 </li>
@@ -73,34 +76,35 @@
           </div>
         </nav>
       </header>
-      <div class="container-fluid mt-5 mainContent">
-        <div class=" d-flex justify-content-between align-items-center centerContent mx-5 mt-5">
-          <div class="textBox">
-            <h2 class="brand">It's not just Coffee It's <span>Starbucks</span></h2>
+      <div class="container-fluid mainContent">
+        <div class=" d-flex align-items-center row">
+          <div class="textBox col-sm-12 col-md-6">
+            <h2 class="brand">It's not just Coffee <br> It's <span>Starbucks</span></h2>
             <p class="paragraph">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsam reprehenderit, rem beatae, sint id quidem, earum ut incidunt voluptas quis eos quia sit fuga dolorum soluta qui! Ab repellat quisquam quam nisi aliquam facilis consequuntur aperiam iure. Et expedita voluptas numquam ducimus repellendus commodi, totam quia sapiente id tempora corporis!</p>
             <button type="button" class="btn btn-success rounded-pill btnLearnMore">LEARN MORE</button>
           </div>
-          <div class="d-flex justify-content-end imgBox">
+          <div class="d-flex imgBox col-sm-12 col-md-6">
             <img src="../resources/img/img1.png" alt="actualCoffee" class="img actualCoffee">
           </div> 
         </div>
-        <div class="d-flex flex-column justify-content-center align-items-center socialBox">
+      </div>
+      <footer class="py-2">
+          <div class="d-flex justify-content-center align-items-center thumb">
+          <div class="mx-4 item1 items"><img src="../resources/img/thumb1.png" alt="firstCoffee" class="img-fluid" onclick="imgSlider('../resources/img/img1.png'); changeCircleColor('green'); "></div>
+          <div class="mx-4 item2 items"><img src="../resources/img/thumb2.png" alt="SecondCoffee" class="img-fluid" onclick="imgSlider('../resources/img/img2.png'); changeCircleColor('pink'); "></div>
+          <div class="mx-4 item3 items"><img src="../resources/img/thumb3.png" alt="ThirdCoffee" class="img-fluid" onclick="imgSlider('../resources/img/img3.png'); changeCircleColor('purple'); "></div>
+        </div>
+      </footer>
+      <div class="d-flex flex-column justify-content-center align-items-center socialBox">
           <i class="bi bi-facebook"></i>
           <i class="bi bi-twitter"></i>
           <i class="bi bi-instagram"></i>
-        </div>
-        <div class="circle"></div>
-
       </div>
-      <footer class="mb-2 mt-5">
-          <div class="d-flex justify-content-center align-items-center mt-5 thumb">
-          <div class="mx-4 item1 items"><img src="../resources/img/thumb1.png" alt="firstCoffee" class="img-fluid" onclick="imgSlider('../resources/img/img1.png'); changeCircleColor('#00754a')"></div>
-          <div class="mx-4 item2 items"><img src="../resources/img/thumb2.png" alt="SecondCoffee" class="img-fluid" onclick="imgSlider('../resources/img/img2.png'); changeCircleColor('#eb7496')"></div>
-          <div class="mx-4 item3 items"><img src="../resources/img/thumb3.png" alt="ThirdCoffee" class="img-fluid" onclick="imgSlider('../resources/img/img3.png'); changeCircleColor('#d752b1')"></div>
-        </div>
-      </footer>
+      <div class="circle"></div>
+ 
     </div>
 
+    
 
 		<!-- Link Bootstrap Js -->
 		<script
@@ -116,8 +120,17 @@
 
       function changeCircleColor(color){
         const circle = document.querySelector('.circle');
-        circle.style.background = color;
+        const imgBox = document.querySelector('.imgBox');
+        if(window.innerWidth <= 780){
+          imgBox.classList.remove("green","purple","pink");
+          imgBox.classList.add(color);
+        }else{
+          circle.classList.remove("green","purple","pink");
+          circle.classList.add(color);
+        }
       }
+
+      
     </script>
 	</body>
 

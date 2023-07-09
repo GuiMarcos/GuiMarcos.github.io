@@ -1,0 +1,70 @@
+@media (max-width: 1220px) {
+  .mainContent .textBox .brand {
+    font-size: 3em;
+  }
+
+  .mainContent .textBox .brand span {
+    font-size: 1.2em;
+  }
+  .mainContent .imgBox img {
+    width: 280px;
+  }
+
+  footer .thumb .items img {
+    width: 50px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .navbar img {
+    width: 60%;
+  }
+}
+
+@media (max-width: 767px) {
+  .navbar .navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .navbar .navbar-nav li .dropdown-toggle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .socialBox .bi {
+    font-size: 25px;
+  }
+
+  .mainContent .imgBox {
+    justify-content: center;
+    border-radius: 10px;
+    background-color: circle(co);
+  }
+
+  .circle {
+    display: none;
+  }
+
+  .socialBox {
+    top: unset;
+    bottom: -10vh;
+    right: 50px;
+  }
+}
+
+@media (max-width: 400px) {
+  .mainContent .textBox .brand {
+    font-size: 2em;
+  }
+  .mainContent .textBox .brand span {
+    font-size: 1em;
+  }
+  .mainContent .imgBox img {
+    width: 240px;
+  }
+  .socialBox {
+    bottom: -3vh;
+  }
+}
