@@ -24,23 +24,34 @@
   </head>
   <body>
     <div class="collapsedNav" id="navbarCollapsed">
-      <button onclick="showNav()" class="btn btn-primary-outline closeBtn">
+      <button
+        onclick="showNav('close')"
+        class="btn btn-primary-outline closeBtn"
+      >
         X
       </button>
       <ul class="nav-links">
         <li class="nav-item">
-          <a onclick="showNav()" href="#home" data-text="HOME" id="home-link"
+          <a
+            onclick="showNav('home-link')"
+            href="#home"
+            data-text="HOME"
+            id="home-link"
             >HOME</a
           >
         </li>
         <li class="nav-item">
-          <a onclick="showNav()" href="#about" data-text="ABOUT" id="about-link"
+          <a
+            onclick="showNav('about-link')"
+            href="#about"
+            data-text="ABOUT"
+            id="about-link"
             >ABOUT</a
           >
         </li>
         <li class="nav-item">
           <a
-            onclick="showNav()"
+            onclick="showNav('skills-link')"
             href="#skills"
             data-text="SKILLS"
             id="skills-link"
@@ -49,7 +60,7 @@
         </li>
         <li class="nav-item">
           <a
-            onclick="showNav()"
+            onclick="showNav('portfolio-link')"
             href="#portfolio"
             data-text="PORTFOLIO"
             id="portfolio-link"
@@ -57,7 +68,13 @@
           >
         </li>
         <li class="nav-item">
-          <a href="#contact" data-text="CONTACT" id="contact-link">CONTACT</a>
+          <a
+            onclick="showNav('contact-link')"
+            href="#contact"
+            data-text="CONTACT"
+            id="contact-link"
+            >CONTACT</a
+          >
         </li>
       </ul>
     </div>

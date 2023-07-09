@@ -1,18 +1,17 @@
 let navOpen = 0;
 let scrollPosition = 0;
 let time = 500;
-function showNav() {
+function showNav(btn) {
   if (!navOpen) {
     scrollPosition =
       window.scrollY ||
       document.documentElement.scrollTop ||
       document.body.scrollTop;
-    console.log(scrollPosition);
   }
   if (navbarCollapsed.style.display == "flex") {
     navbarCollapsed.style.display = "none";
     visibleContent.style.display = "block";
-    scrollToSmoothly(scrollPosition, time);
+    if (btn == "close") scrollToSmoothly(scrollPosition, time);
     navOpen = 0;
   } else {
     navbarCollapsed.style.display = "flex";

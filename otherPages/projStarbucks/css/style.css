@@ -47,6 +47,10 @@ header .navbar .btnLearnMore:hover {
   padding: 0 2.5rem;
 }
 
+.mainContent .textBox {
+  padding: 2.5rem 0;
+}
+
 .mainContent .textBox .paragraph {
   text-align: justify;
 }
@@ -71,12 +75,6 @@ header .navbar .btnLearnMore:hover {
 
 .mainContent .imgBox img {
   width: 340px;
-}
-
-.socialBox {
-  position: absolute;
-  top: 40vh;
-  right: 30px;
 }
 
 .socialBox .bi {
@@ -158,16 +156,10 @@ footer .thumb .items img {
   }
   .mainContent .imgBox {
     justify-content: center;
-    border-radius: 10px;
-    background-color: circle(co);
+    border-radius: 50px;
   }
   .circle {
     display: none;
-  }
-  .socialBox {
-    top: unset;
-    bottom: -10vh;
-    right: 50px;
   }
 }
 @media (max-width: 400px) {

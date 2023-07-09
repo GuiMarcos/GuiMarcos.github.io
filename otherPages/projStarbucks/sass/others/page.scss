@@ -47,6 +47,9 @@ header .navbar .btnLearnMore {
 .mainContent {
   padding: 0 2.5rem;
 }
+.mainContent .textBox {
+  padding: 2.5rem 0;
+}
 
 .mainContent .textBox .paragraph {
   text-align: justify;
@@ -72,12 +75,6 @@ header .navbar .btnLearnMore {
 
 .mainContent .imgBox img {
   width: 340px;
-}
-
-.socialBox {
-  position: absolute;
-  top: 40vh;
-  right: 30px;
 }
 
 .socialBox .bi {
