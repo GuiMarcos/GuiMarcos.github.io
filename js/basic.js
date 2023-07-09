@@ -1,6 +1,6 @@
 let navOpen = 0;
 let scrollPosition = 0;
-let time = 0;
+let time = 500;
 function showNav() {
   if (!navOpen) {
     scrollPosition =
@@ -8,11 +8,6 @@ function showNav() {
       document.documentElement.scrollTop ||
       document.body.scrollTop;
     console.log(scrollPosition);
-    if (scrollPosition > 1800) {
-      time = 1500;
-    } else {
-      time = 500;
-    }
   }
   if (navbarCollapsed.style.display == "flex") {
     navbarCollapsed.style.display = "none";

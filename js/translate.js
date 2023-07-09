@@ -109,7 +109,6 @@ function portfolioSectionTranslate(lang) {
   const btnSeeMore = portfolio.querySelector(".btnSeeMore");
   let btnSeeMorePT = "Mais Projetos";
   let btnSeeMoreEN = "More Projects";
-
   if (lang == "pt") {
     portfolioTop.innerHTML = portfolioTopPT;
     titleCard1.innerHTML = titleCard1PT;
@@ -150,6 +149,9 @@ function contactSectionTranslate(lang) {
   let subjectEN = "Subject";
   let messagePT = "Eu tenho um trabalho para voce!";
   let messageEN = "I have a job for you!";
+  const btnSubmit = contact.querySelector(".btnSubmit");
+  let btnSubmitPT = "Enviar";
+  let btnSubmitEN = "Submit";
 
   if (lang == "pt") {
     contactTop.innerHTML = contactTopPT;
@@ -157,12 +159,14 @@ function contactSectionTranslate(lang) {
     name.placeholder = namePT;
     subject.placeholder = subjectPT;
     message.placeholder = messagePT;
+    btnSubmit.innerHTML = btnSubmitPT;
   } else {
     contactTop.innerHTML = contactTopEN;
     contactThanks.innerHTML = contactThanksEN;
     name.placeholder = nameEN;
     subject.placeholder = subjectEN;
     message.placeholder = messageEN;
+    btnSubmit.innerHTML = btnSubmitEN;
   }
 }
 
